@@ -1,3 +1,7 @@
+###Reyes, Marcus
+###CoE 197Z Project 1
+###Kaggle-https://www.kaggle.com/c/cat-in-the-dat
+
 import pandas as pd
 import keras
 import numpy as np
@@ -9,6 +13,8 @@ from keras.optimizers import adam
 
 from sklearn import preprocessing
 
+
+###Data preprocessing
 data = pd.read_csv("train.csv")
 #For now ignore the data you don't know how to handle
 #drop = ['id', 'nom_5', 'nom_6', 'nom_7', 'nom_8', 'nom_9']
@@ -39,29 +45,30 @@ for i,w in enumerate(labelled):
     print(data[w])
 
 y_train = data['target'].to_numpy()
-print(y_train.shape)
+# print(y_train.shape)
 y_train = keras.utils.to_categorical(y_train, 2)
 
 data = data.drop(columns = ['target'])
 
 x = data.to_numpy()
 
+###Normalize data to large to be one-hot-encoded
 min_max_scaler = preprocessing.MinMaxScaler()
 x = min_max_scaler.fit_transform(x)
 
-print(x[4,:])
-print(x[7,:])
+# print(x[4,:])
+# print(x[7,:])
 x_train = x[:240000,:]
 x_pretest = x[240000:,:]
 
 y_pretest = y_train[240000:,:]
 y_train = y_train[:240000,:]
 
+###Model
 
 hidden = 2048
 dropout = 0.25
 (trash, input_dim) = x.shape
-print("X.shape",x.shape)
 model = Sequential()
 
 model.add(Dense(hidden, input_dim = input_dim))
@@ -83,6 +90,7 @@ model.summary()
 
 model.compile(loss='binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
 
+###To keep track of validation error
 for i in range(7):
 
     model.fit(x_train, y_train, epochs = 2, batch_size = 4096*8)
@@ -91,18 +99,14 @@ for i in range(7):
     print("\nTest accuacy: %.1f%%" % (100.0 * score[1]))
 
 
+###Testing
 try:
     del data
 except:
     pass
  
 data = pd.read_csv("test.csv")
-#For now ignore the data you don't know how to handle
 data = data.drop(columns = drop)
-
-
-#Categorical to Labeled
-#https://www.datacamp.com/community/tutorials/categorical-data#encoding
 
 
 for i,w in enumerate(one_hot):
@@ -120,14 +124,19 @@ for i,w in enumerate(labelled):
     
     print(data[w])
 
+
+
 x_test = data.to_numpy()
 
 min_max_scaler = preprocessing.MinMaxScaler()
 x_test = min_max_scaler.fit_transform(x_test)
  
-print("X_testshape",x_test.shape)
+# print("X_testshape",x_test.shape)
 y_test = model.predict(x_test)
 
+
+
+###Formatting into csv submittable
 id = np.arange(start = 300000, stop = 500000)
 id = np.transpose(id)
 id = id.reshape(200000,1)
