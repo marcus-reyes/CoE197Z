@@ -51,15 +51,6 @@ def clean_data_with_mean(data, column):
     # print(data[column].mean())
     # print(data[column].median())
    
-    # data["gps_height"].fillna(data.groupby(['region', 'district_code'])["gps_height"].transform("mean"), inplace=True)
-    # data["gps_height"].fillna(data.groupby(['region'])["gps_height"].transform("mean"), inplace=True)
-    # data["gps_height"].fillna(data["gps_height"].mean(), inplace=True)
-    # data["population"].fillna(data.groupby(['region', 'district_code'])["population"].transform("median"), inplace=True)
-    # data["population"].fillna(data.groupby(['region'])["population"].transform("median"), inplace=True)
-    # data["population"].fillna(data["population"].median(), inplace=True)
-    # data["amount_tsh"].fillna(data.groupby(['region', 'district_code'])["amount_tsh"].transform("median"), inplace=True)
-    # data["amount_tsh"].fillna(data.groupby(['region'])["amount_tsh"].transform("median"), inplace=True)
-    # data["amount_tsh"].fillna(data["amount_tsh"].median(), inplace=True)
     replace_map = {column:{0:data[column].mean()}}
     print(replace_map)
     data.replace(replace_map, inplace = True)
