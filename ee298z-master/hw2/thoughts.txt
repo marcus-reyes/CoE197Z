@@ -1,0 +1,92 @@
+Benchmark for 10 epochs
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_1 (InputLayer)         (None, 28, 28, 1)         0
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 14, 14, 32)        320
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 7, 7, 32)          9248
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 1568)              0
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                15690
+=================================================================
+Total params: 25,258
+Trainable params: 25,258
+Non-trainable params: 0
+_________________________________________________________________
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_2 (InputLayer)         (None, 10)                0
+_________________________________________________________________
+dense_4 (Dense)              (None, 1568)              17248
+_________________________________________________________________
+reshape_1 (Reshape)          (None, 7, 7, 32)          0
+_________________________________________________________________
+conv2d_transpose_1 (Conv2DTr (None, 14, 14, 32)        9248
+_________________________________________________________________
+conv2d_transpose_2 (Conv2DTr (None, 28, 28, 32)        9248
+_________________________________________________________________
+conv2d_transpose_3 (Conv2DTr (None, 28, 28, 1)         289
+_________________________________________________________________
+activation_1 (Activation)    (None, 28, 28, 1)         0
+=================================================================
+Total params: 36,033
+Trainable params: 36,033
+Non-trainable params: 0
+_________________________________________________________________
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_1 (InputLayer)         (None, 28, 28, 1)         0
+_________________________________________________________________
+model_1 (Model)              (None, 10)                25258
+_________________________________________________________________
+decoder (Model)              (None, 28, 28, 1)         36033
+=================================================================
+Total params: 61,291
+Trainable params: 61,291
+Non-trainable params: 0
+Classifier score: 87.69
+SSIM score: 81.52
+
+Increasing latent dimensions from 10 to 20
+
+Classifier score: 93.00
+SSIM score: 89.82
+
+20 to 30. Will keep increasing
+Classifier score: 94.91
+SSIM score: 92.64
+30 to 40
+Classifier score: 95.35
+SSIM score: 94.06
+40 to 100
+Classifier score: 96.66
+SSIM score: 96.15
+100 to 1000
+Classifier score: 96.75
+SSIM score: 96.86
+1000 to 10000
+Classifier score: 96.99
+SSIM score: 96.87
+but the training time took too long will try 1000 with more epochs
+The training log shows it overfitting at around 20 epochs
+did 20 epochs
+Classifier score: 97.07
+SSIM score: 97.46
+adding dropout only worsened or prolonged training time to same score. will try tanh
+patched epochs from 20 to 15
+trying larger batch size keeping BN because it didnt seem to hurt
+lowered batch size to 64
+Classifier score: 97.08
+SSIM score: 97.68
+32 batch size seems doable
+Classifier score: 97.22
+SSIM score: 97.63
+doubling the filters per iteration
+Classifier score: 96.95
+SSIM score: 97.73
+Increased the filters again but had to increase batchsize
