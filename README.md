@@ -17,5 +17,7 @@ the texar-master directory contains the base code for the second project forked 
 
 Our notebook documenting our results is at https://github.com/marcus-reyes/CoE197Z/tree/master/texar-master/texar-master/examples/text_style_transfer
 
+## Autoencoder homework
+
 ee298z-master contains the environment for HW2. Taken from: https://github.com/baudm/ee298z
 
