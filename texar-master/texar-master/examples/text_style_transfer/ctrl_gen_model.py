@@ -56,6 +56,8 @@ class CtrlGenModel(object):
         # Gets the sentence representation: h = (c, z)
         labels = tf.cast(tf.reshape(inputs['labels'], [-1, 1]), tf.float32)
         c = label_connector(labels)
+        print("SIZE OF LABELS", labels.get_shape())
+        print("SIZE OF C", c.get_shape())
         c_ = label_connector(1 - labels)
         h = tf.concat([c, z], 1)
         h_ = tf.concat([c_, z], 1)

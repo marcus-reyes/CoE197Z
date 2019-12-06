@@ -1,0 +1,1161 @@
+(base) PS C:\Users\Marcus\197_proj1\CoE197Z\texar-master\texar-master\examples\text_style_transfer> conda activate coe197z
+(coe197z) PS C:\Users\Marcus\197_proj1\CoE197Z\texar-master\texar-master\examples\text_style_transfer> python main.py --config config
+SIZE OF FINAL STATE (?, 700)
+SIZE OF Z (?, 500)
+2019-12-05 20:37:42.036548: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library nvcuda.dll
+2019-12-05 20:37:42.914369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties:
+name: GeForce GTX 1060 major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:01:00.0
+2019-12-05 20:37:42.920891: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2019-12-05 20:37:42.926261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-12-05 20:37:42.931617: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2019-12-05 20:37:42.938641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties:
+name: GeForce GTX 1060 major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:01:00.0
+2019-12-05 20:37:42.943752: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2019-12-05 20:37:42.947953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-12-05 20:37:46.236159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-05 20:37:46.241192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0
+2019-12-05 20:37:46.243113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N
+2019-12-05 20:37:46.247005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4712 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1)
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.6903 accu_d: 0.5625
+step: 1, loss_g: 9.3753 loss_g_ae: 9.3753 loss_g_clas: 0.6970 accu_g: 0.3281 accu_g_gdy: 0.3750
+epoch: 1, loss_d: 0.5946 accu_d: 0.6582
+epoch: 1, loss_g: 6.2685 loss_g_ae: 6.2685 loss_g_clas: 0.7796 accu_g: 0.3745 accu_g_gdy: 0.7065
+val: loss_g: 6.3621 loss_g_ae: 6.3621 loss_g_clas: 0.7112 loss_d: 0.6693 accu_d: 0.5515 accu_g: 0.5024 accu_g_gdy: 0.6244
+test: loss_g: 6.1360 loss_g_ae: 6.1360 loss_g_clas: 0.7952 loss_d: 0.5873 accu_d: 0.6673 accu_g: 0.3595 accu_g_gdy: 0.7042
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.5917 accu_d: 0.7344
+step: 1, loss_g: 5.9891 loss_g_ae: 5.9891 loss_g_clas: 0.8010 accu_g: 0.3281 accu_g_gdy: 0.7812
+epoch: 2, loss_d: 0.4770 accu_d: 0.7712
+epoch: 2, loss_g: 5.7793 loss_g_ae: 5.7793 loss_g_clas: 0.9174 accu_g: 0.3397 accu_g_gdy: 0.6395
+val: loss_g: 6.2113 loss_g_ae: 6.2113 loss_g_clas: 0.7750 loss_d: 0.5951 accu_d: 0.6830 accu_g: 0.5293 accu_g_gdy: 0.4992
+test: loss_g: 5.9446 loss_g_ae: 5.9446 loss_g_clas: 0.8756 loss_d: 0.5043 accu_d: 0.7492 accu_g: 0.3756 accu_g_gdy: 0.6499
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.4236 accu_d: 0.8594
+step: 1, loss_g: 5.5334 loss_g_ae: 5.5334 loss_g_clas: 0.9652 accu_g: 0.3281 accu_g_gdy: 0.6094
+epoch: 3, loss_d: 0.3361 accu_d: 0.8674
+epoch: 3, loss_g: 5.6651 loss_g_ae: 5.6651 loss_g_clas: 1.0354 accu_g: 0.4046 accu_g_gdy: 0.6006
+val: loss_g: 6.1470 loss_g_ae: 6.1470 loss_g_clas: 0.8268 loss_d: 0.6080 accu_d: 0.6910 accu_g: 0.5452 accu_g_gdy: 0.4976
+test: loss_g: 5.8583 loss_g_ae: 5.8583 loss_g_clas: 1.0262 loss_d: 0.5020 accu_d: 0.7559 accu_g: 0.3924 accu_g_gdy: 0.6083
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.2959 accu_d: 0.9062
+step: 1, loss_g: 5.4072 loss_g_ae: 5.4072 loss_g_clas: 0.9594 accu_g: 0.4219 accu_g_gdy: 0.7031
+epoch: 4, loss_d: 0.2131 accu_d: 0.9267
+epoch: 4, loss_g: 5.4468 loss_g_ae: 5.4468 loss_g_clas: 1.1116 accu_g: 0.4607 accu_g_gdy: 0.5455
+val: loss_g: 6.1096 loss_g_ae: 6.1096 loss_g_clas: 0.9405 loss_d: 0.7623 accu_d: 0.6498 accu_g: 0.5626 accu_g_gdy: 0.6101
+test: loss_g: 5.7995 loss_g_ae: 5.7995 loss_g_clas: 1.2375 loss_d: 0.5871 accu_d: 0.7411 accu_g: 0.4272 accu_g_gdy: 0.5412
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.1736 accu_d: 0.9375
+step: 1, loss_g: 5.2589 loss_g_ae: 5.2589 loss_g_clas: 1.2015 accu_g: 0.5156 accu_g_gdy: 0.6094
+epoch: 5, loss_d: 0.1300 accu_d: 0.9537
+epoch: 5, loss_g: 5.1718 loss_g_ae: 5.1718 loss_g_clas: 1.0689 accu_g: 0.5477 accu_g_gdy: 0.5306
+val: loss_g: 5.8496 loss_g_ae: 5.8496 loss_g_clas: 0.7794 loss_d: 0.8136 accu_d: 0.6640 accu_g: 0.6672 accu_g_gdy: 0.5103
+test: loss_g: 5.5193 loss_g_ae: 5.5193 loss_g_clas: 0.9934 loss_d: 0.6557 accu_d: 0.7378 accu_g: 0.5667 accu_g_gdy: 0.4889
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0820 accu_d: 0.9688
+step: 1, loss_g: 4.7258 loss_g_ae: 4.7258 loss_g_clas: 1.0801 accu_g: 0.5938 accu_g_gdy: 0.5469
+epoch: 6, loss_d: 0.0818 accu_d: 0.9766
+epoch: 6, loss_g: 4.7160 loss_g_ae: 4.7160 loss_g_clas: 1.0325 accu_g: 0.5747 accu_g_gdy: 0.6407
+val: loss_g: 5.6001 loss_g_ae: 5.6001 loss_g_clas: 0.8853 loss_d: 0.9341 accu_d: 0.6561 accu_g: 0.6482 accu_g_gdy: 0.6894
+test: loss_g: 5.2267 loss_g_ae: 5.2267 loss_g_clas: 1.1621 loss_d: 0.7385 accu_d: 0.7284 accu_g: 0.5392 accu_g_gdy: 0.7022
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0326 accu_d: 1.0000
+step: 1, loss_g: 4.6277 loss_g_ae: 4.6277 loss_g_clas: 1.0453 accu_g: 0.5469 accu_g_gdy: 0.6562
+epoch: 7, loss_d: 0.0494 accu_d: 0.9849
+epoch: 7, loss_g: 4.0980 loss_g_ae: 4.0980 loss_g_clas: 1.0264 accu_g: 0.6381 accu_g_gdy: 0.8248
+val: loss_g: 4.8629 loss_g_ae: 4.8629 loss_g_clas: 0.8292 loss_d: 1.0628 accu_d: 0.6434 accu_g: 0.7116 accu_g_gdy: 0.7908
+test: loss_g: 4.4942 loss_g_ae: 4.4942 loss_g_clas: 1.1297 loss_d: 0.8282 accu_d: 0.7270 accu_g: 0.6150 accu_g_gdy: 0.7384
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0344 accu_d: 0.9844
+step: 1, loss_g: 3.7824 loss_g_ae: 3.7824 loss_g_clas: 1.0722 accu_g: 0.6719 accu_g_gdy: 0.7969
+epoch: 8, loss_d: 0.0222 accu_d: 0.9969
+epoch: 8, loss_g: 3.5927 loss_g_ae: 3.5927 loss_g_clas: 1.1797 accu_g: 0.6007 accu_g_gdy: 0.7800
+val: loss_g: 4.7168 loss_g_ae: 4.7168 loss_g_clas: 0.8577 loss_d: 1.1746 accu_d: 0.6450 accu_g: 0.6973 accu_g_gdy: 0.8225
+test: loss_g: 4.3162 loss_g_ae: 4.3162 loss_g_clas: 1.1765 loss_d: 0.9115 accu_d: 0.7210 accu_g: 0.6050 accu_g_gdy: 0.7874
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0111 accu_d: 1.0000
+step: 1, loss_g: 3.1854 loss_g_ae: 3.1854 loss_g_clas: 1.2423 accu_g: 0.6562 accu_g_gdy: 0.8281
+epoch: 9, loss_d: 0.0175 accu_d: 0.9953
+epoch: 9, loss_g: 3.3398 loss_g_ae: 3.3398 loss_g_clas: 1.0772 accu_g: 0.6652 accu_g_gdy: 0.7873
+val: loss_g: 4.6624 loss_g_ae: 4.6624 loss_g_clas: 0.8931 loss_d: 1.2470 accu_d: 0.6434 accu_g: 0.7290 accu_g_gdy: 0.7908
+test: loss_g: 4.2225 loss_g_ae: 4.2225 loss_g_clas: 1.3114 loss_d: 0.9659 accu_d: 0.7183 accu_g: 0.6097 accu_g_gdy: 0.7371
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0139 accu_d: 1.0000
+step: 1, loss_g: 3.1799 loss_g_ae: 3.1799 loss_g_clas: 1.0260 accu_g: 0.6406 accu_g_gdy: 0.7969
+epoch: 10, loss_d: 0.0216 accu_d: 0.9922
+epoch: 10, loss_g: 2.9819 loss_g_ae: 2.9819 loss_g_clas: 1.1976 accu_g: 0.6640 accu_g_gdy: 0.7405
+val: loss_g: 4.5077 loss_g_ae: 4.5077 loss_g_clas: 0.8681 loss_d: 1.3414 accu_d: 0.6371 accu_g: 0.7306 accu_g_gdy: 0.8193
+test: loss_g: 4.0611 loss_g_ae: 4.0611 loss_g_clas: 1.1715 loss_d: 1.0377 accu_d: 0.7136 accu_g: 0.6533 accu_g_gdy: 0.7914
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0076 accu_d: 1.0000
+step: 1, loss_g: 2.8270 loss_g_ae: 2.8270 loss_g_clas: 1.1597 accu_g: 0.6719 accu_g_gdy: 0.7969
+epoch: 11, loss_d: 0.0082 accu_d: 0.9984
+epoch: 11, loss_g: 2.6101 loss_g_ae: 2.6101 loss_g_clas: 1.4152 accu_g: 0.6333 accu_g_gdy: 0.7037
+val: loss_g: 4.3788 loss_g_ae: 4.3788 loss_g_clas: 0.9859 loss_d: 1.4091 accu_d: 0.6403 accu_g: 0.7068 accu_g_gdy: 0.7987
+test: loss_g: 3.8948 loss_g_ae: 3.8948 loss_g_clas: 1.4039 loss_d: 1.0847 accu_d: 0.7143 accu_g: 0.6378 accu_g_gdy: 0.7304
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0084 accu_d: 1.0000
+step: 1, loss_g: 2.1481 loss_g_ae: 2.1481 loss_g_clas: 1.5143 accu_g: 0.6250 accu_g_gdy: 0.7656
+epoch: 12, loss_d: 0.0066 accu_d: 1.0000
+epoch: 12, loss_g: 2.3393 loss_g_ae: 2.3393 loss_g_clas: 1.4709 accu_g: 0.6402 accu_g_gdy: 0.7282
+val: loss_g: 4.4676 loss_g_ae: 4.4676 loss_g_clas: 0.9512 loss_d: 1.4721 accu_d: 0.6403 accu_g: 0.7211 accu_g_gdy: 0.7591
+test: loss_g: 3.9239 loss_g_ae: 3.9239 loss_g_clas: 1.3252 loss_d: 1.1306 accu_d: 0.7163 accu_g: 0.6519 accu_g_gdy: 0.7378
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0538 accu_d: 0.9844
+step: 1, loss_g: 2.2175 loss_g_ae: 2.2175 loss_g_clas: 1.3256 accu_g: 0.6719 accu_g_gdy: 0.6562
+epoch: 13, loss_d: 0.0070 accu_d: 1.0000
+epoch: 13, loss_g: 2.1461 loss_g_ae: 2.1461 loss_g_clas: 1.3733 accu_g: 0.6744 accu_g_gdy: 0.7512
+val: loss_g: 4.3565 loss_g_ae: 4.3565 loss_g_clas: 0.9906 loss_d: 1.5505 accu_d: 0.6387 accu_g: 0.7385 accu_g_gdy: 0.7765
+test: loss_g: 3.8318 loss_g_ae: 3.8318 loss_g_clas: 1.4612 loss_d: 1.1895 accu_d: 0.7156 accu_g: 0.6439 accu_g_gdy: 0.7371
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0030 accu_d: 1.0000
+step: 1, loss_g: 1.8324 loss_g_ae: 1.8324 loss_g_clas: 1.5698 accu_g: 0.6719 accu_g_gdy: 0.7188
+epoch: 14, loss_d: 0.0080 accu_d: 0.9984
+epoch: 14, loss_g: 1.9192 loss_g_ae: 1.9192 loss_g_clas: 1.5069 accu_g: 0.6448 accu_g_gdy: 0.7353
+val: loss_g: 4.3654 loss_g_ae: 4.3654 loss_g_clas: 0.9761 loss_d: 1.6169 accu_d: 0.6403 accu_g: 0.7433 accu_g_gdy: 0.7956
+test: loss_g: 3.8238 loss_g_ae: 3.8238 loss_g_clas: 1.3392 loss_d: 1.2342 accu_d: 0.7156 accu_g: 0.6794 accu_g_gdy: 0.7619
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0027 accu_d: 1.0000
+step: 1, loss_g: 1.4829 loss_g_ae: 1.4829 loss_g_clas: 1.5061 accu_g: 0.6875 accu_g_gdy: 0.6875
+epoch: 15, loss_d: 0.0051 accu_d: 0.9984
+epoch: 15, loss_g: 1.7188 loss_g_ae: 1.7188 loss_g_clas: 1.5328 accu_g: 0.6360 accu_g_gdy: 0.7302
+val: loss_g: 4.4124 loss_g_ae: 4.4124 loss_g_clas: 1.1271 loss_d: 1.6636 accu_d: 0.6434 accu_g: 0.7290 accu_g_gdy: 0.7845
+test: loss_g: 3.8394 loss_g_ae: 3.8394 loss_g_clas: 1.5628 loss_d: 1.2749 accu_d: 0.7150 accu_g: 0.6667 accu_g_gdy: 0.7404
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0021 accu_d: 1.0000
+step: 1, loss_g: 1.3288 loss_g_ae: 1.3288 loss_g_clas: 1.7277 accu_g: 0.7344 accu_g_gdy: 0.7656
+epoch: 16, loss_d: 0.0034 accu_d: 1.0000
+epoch: 16, loss_g: 1.6221 loss_g_ae: 1.6221 loss_g_clas: 1.6093 accu_g: 0.6458 accu_g_gdy: 0.7072
+val: loss_g: 4.4767 loss_g_ae: 4.4767 loss_g_clas: 1.0732 loss_d: 1.7090 accu_d: 0.6466 accu_g: 0.7417 accu_g_gdy: 0.7781
+test: loss_g: 3.8775 loss_g_ae: 3.8775 loss_g_clas: 1.6345 loss_d: 1.3115 accu_d: 0.7156 accu_g: 0.6559 accu_g_gdy: 0.7270
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0021 accu_d: 1.0000
+step: 1, loss_g: 1.1656 loss_g_ae: 1.1656 loss_g_clas: 2.0585 accu_g: 0.6094 accu_g_gdy: 0.6250
+epoch: 17, loss_d: 0.0018 accu_d: 1.0000
+epoch: 17, loss_g: 1.2750 loss_g_ae: 1.2750 loss_g_clas: 1.6822 accu_g: 0.6532 accu_g_gdy: 0.6917
+val: loss_g: 4.5853 loss_g_ae: 4.5853 loss_g_clas: 0.9859 loss_d: 1.7396 accu_d: 0.6418 accu_g: 0.7623 accu_g_gdy: 0.7496
+test: loss_g: 3.9523 loss_g_ae: 3.9523 loss_g_clas: 1.4959 loss_d: 1.3403 accu_d: 0.7116 accu_g: 0.6888 accu_g_gdy: 0.7203
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0024 accu_d: 1.0000
+step: 1, loss_g: 0.9439 loss_g_ae: 0.9439 loss_g_clas: 1.5277 accu_g: 0.6875 accu_g_gdy: 0.6719
+epoch: 18, loss_d: 0.0015 accu_d: 1.0000
+epoch: 18, loss_g: 1.2263 loss_g_ae: 1.2263 loss_g_clas: 1.8012 accu_g: 0.6405 accu_g_gdy: 0.6738
+val: loss_g: 4.5728 loss_g_ae: 4.5728 loss_g_clas: 1.1450 loss_d: 1.8088 accu_d: 0.6371 accu_g: 0.7496 accu_g_gdy: 0.7686
+test: loss_g: 3.9281 loss_g_ae: 3.9281 loss_g_clas: 1.6065 loss_d: 1.3881 accu_d: 0.7129 accu_g: 0.6901 accu_g_gdy: 0.7129
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0003 accu_d: 1.0000
+step: 1, loss_g: 0.8002 loss_g_ae: 0.8002 loss_g_clas: 2.7060 accu_g: 0.4688 accu_g_gdy: 0.4844
+epoch: 19, loss_d: 0.0017 accu_d: 1.0000
+epoch: 19, loss_g: 0.9992 loss_g_ae: 0.9992 loss_g_clas: 1.8579 accu_g: 0.6232 accu_g_gdy: 0.6509
+val: loss_g: 4.7546 loss_g_ae: 4.7546 loss_g_clas: 1.2993 loss_d: 1.8680 accu_d: 0.6387 accu_g: 0.7274 accu_g_gdy: 0.7591
+test: loss_g: 4.0735 loss_g_ae: 4.0735 loss_g_clas: 1.9463 loss_d: 1.4319 accu_d: 0.7170 accu_g: 0.6586 accu_g_gdy: 0.6975
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0008 accu_d: 1.0000
+step: 1, loss_g: 0.7427 loss_g_ae: 0.7427 loss_g_clas: 2.1443 accu_g: 0.5938 accu_g_gdy: 0.5156
+epoch: 20, loss_d: 0.0014 accu_d: 1.0000
+epoch: 20, loss_g: 0.9465 loss_g_ae: 0.9465 loss_g_clas: 1.9342 accu_g: 0.6364 accu_g_gdy: 0.6335
+val: loss_g: 4.6545 loss_g_ae: 4.6545 loss_g_clas: 1.2959 loss_d: 1.8803 accu_d: 0.6387 accu_g: 0.7401 accu_g_gdy: 0.7528
+test: loss_g: 3.9989 loss_g_ae: 3.9989 loss_g_clas: 1.8593 loss_d: 1.4485 accu_d: 0.7116 accu_g: 0.6546 accu_g_gdy: 0.6895
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0007 accu_d: 1.0000
+step: 1, loss_g: 0.5823 loss_g_ae: 0.5823 loss_g_clas: 2.3635 accu_g: 0.6094 accu_g_gdy: 0.5781
+epoch: 21, loss_d: 0.0010 accu_d: 1.0000
+epoch: 21, loss_g: 0.8376 loss_g_ae: 0.8376 loss_g_clas: 2.2455 accu_g: 0.6100 accu_g_gdy: 0.5637
+val: loss_g: 4.8667 loss_g_ae: 4.8667 loss_g_clas: 1.4462 loss_d: 1.9313 accu_d: 0.6403 accu_g: 0.7068 accu_g_gdy: 0.7433
+test: loss_g: 4.1528 loss_g_ae: 4.1528 loss_g_clas: 1.9817 loss_d: 1.4758 accu_d: 0.7136 accu_g: 0.6519 accu_g_gdy: 0.6781
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0014 accu_d: 1.0000
+step: 1, loss_g: 0.5741 loss_g_ae: 0.5741 loss_g_clas: 2.9693 accu_g: 0.5625 accu_g_gdy: 0.4844
+epoch: 22, loss_d: 0.0011 accu_d: 1.0000
+epoch: 22, loss_g: 0.7000 loss_g_ae: 0.7000 loss_g_clas: 2.1546 accu_g: 0.6077 accu_g_gdy: 0.5439
+val: loss_g: 4.8934 loss_g_ae: 4.8934 loss_g_clas: 1.4369 loss_d: 1.9578 accu_d: 0.6403 accu_g: 0.7290 accu_g_gdy: 0.7084
+test: loss_g: 4.1837 loss_g_ae: 4.1837 loss_g_clas: 2.0555 loss_d: 1.4979 accu_d: 0.7143 accu_g: 0.6472 accu_g_gdy: 0.6767
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0008 accu_d: 1.0000
+step: 1, loss_g: 0.5385 loss_g_ae: 0.5385 loss_g_clas: 2.7018 accu_g: 0.5938 accu_g_gdy: 0.4531
+epoch: 23, loss_d: 0.0007 accu_d: 1.0000
+epoch: 23, loss_g: 0.5892 loss_g_ae: 0.5892 loss_g_clas: 2.5301 accu_g: 0.5683 accu_g_gdy: 0.5449
+val: loss_g: 5.1120 loss_g_ae: 5.1120 loss_g_clas: 1.3907 loss_d: 2.0076 accu_d: 0.6403 accu_g: 0.7417 accu_g_gdy: 0.7480
+test: loss_g: 4.3599 loss_g_ae: 4.3599 loss_g_clas: 2.0801 loss_d: 1.5342 accu_d: 0.7123 accu_g: 0.6492 accu_g_gdy: 0.6593
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0007 accu_d: 1.0000
+step: 1, loss_g: 0.3996 loss_g_ae: 0.3996 loss_g_clas: 3.2512 accu_g: 0.3750 accu_g_gdy: 0.3438
+epoch: 24, loss_d: 0.0008 accu_d: 1.0000
+epoch: 24, loss_g: 0.5557 loss_g_ae: 0.5557 loss_g_clas: 2.5557 accu_g: 0.5679 accu_g_gdy: 0.4933
+val: loss_g: 5.1511 loss_g_ae: 5.1511 loss_g_clas: 1.4575 loss_d: 2.0286 accu_d: 0.6371 accu_g: 0.6989 accu_g_gdy: 0.6973
+test: loss_g: 4.4111 loss_g_ae: 4.4111 loss_g_clas: 2.0768 loss_d: 1.5560 accu_d: 0.7116 accu_g: 0.6526 accu_g_gdy: 0.6620
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 0.3777 loss_g_ae: 0.3777 loss_g_clas: 2.4363 accu_g: 0.6094 accu_g_gdy: 0.3906
+epoch: 25, loss_d: 0.0003 accu_d: 1.0000
+epoch: 25, loss_g: 0.5321 loss_g_ae: 0.5321 loss_g_clas: 2.9840 accu_g: 0.5252 accu_g_gdy: 0.4707
+val: loss_g: 5.1050 loss_g_ae: 5.1050 loss_g_clas: 1.5159 loss_d: 2.0621 accu_d: 0.6418 accu_g: 0.7052 accu_g_gdy: 0.6941
+test: loss_g: 4.3626 loss_g_ae: 4.3626 loss_g_clas: 1.9997 loss_d: 1.5858 accu_d: 0.7123 accu_g: 0.6653 accu_g_gdy: 0.6647
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0003 accu_d: 1.0000
+step: 1, loss_g: 0.3307 loss_g_ae: 0.3307 loss_g_clas: 3.1828 accu_g: 0.5312 accu_g_gdy: 0.3594
+epoch: 26, loss_d: 0.0008 accu_d: 1.0000
+epoch: 26, loss_g: 0.4926 loss_g_ae: 0.4926 loss_g_clas: 3.0947 accu_g: 0.5422 accu_g_gdy: 0.4518
+val: loss_g: 5.1640 loss_g_ae: 5.1640 loss_g_clas: 1.4699 loss_d: 2.0968 accu_d: 0.6403 accu_g: 0.7338 accu_g_gdy: 0.7036
+test: loss_g: 4.4107 loss_g_ae: 4.4107 loss_g_clas: 2.3425 loss_d: 1.6031 accu_d: 0.7116 accu_g: 0.6358 accu_g_gdy: 0.6512
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 0.3423 loss_g_ae: 0.3423 loss_g_clas: 2.6510 accu_g: 0.5781 accu_g_gdy: 0.4375
+epoch: 27, loss_d: 0.0004 accu_d: 1.0000
+epoch: 27, loss_g: 0.4516 loss_g_ae: 0.4516 loss_g_clas: 2.8608 accu_g: 0.5437 accu_g_gdy: 0.4742
+val: loss_g: 5.2703 loss_g_ae: 5.2703 loss_g_clas: 1.5509 loss_d: 2.1213 accu_d: 0.6387 accu_g: 0.7227 accu_g_gdy: 0.6973
+test: loss_g: 4.4947 loss_g_ae: 4.4947 loss_g_clas: 2.3041 loss_d: 1.6224 accu_d: 0.7123 accu_g: 0.6452 accu_g_gdy: 0.6600
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 0.3457 loss_g_ae: 0.3457 loss_g_clas: 4.4806 accu_g: 0.4062 accu_g_gdy: 0.3281
+epoch: 28, loss_d: 0.0004 accu_d: 1.0000
+epoch: 28, loss_g: 0.4846 loss_g_ae: 0.4846 loss_g_clas: 2.9929 accu_g: 0.5345 accu_g_gdy: 0.4552
+val: loss_g: 5.2974 loss_g_ae: 5.2974 loss_g_clas: 1.6674 loss_d: 2.1472 accu_d: 0.6339 accu_g: 0.7068 accu_g_gdy: 0.6926
+test: loss_g: 4.5436 loss_g_ae: 4.5436 loss_g_clas: 2.4277 loss_d: 1.6411 accu_d: 0.7103 accu_g: 0.6291 accu_g_gdy: 0.6479
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0011 accu_d: 1.0000
+step: 1, loss_g: 0.3717 loss_g_ae: 0.3717 loss_g_clas: 4.4842 accu_g: 0.3125 accu_g_gdy: 0.3594
+epoch: 29, loss_d: 0.0005 accu_d: 1.0000
+epoch: 29, loss_g: 0.3615 loss_g_ae: 0.3615 loss_g_clas: 3.3106 accu_g: 0.5027 accu_g_gdy: 0.4145
+val: loss_g: 5.4180 loss_g_ae: 5.4180 loss_g_clas: 1.5443 loss_d: 2.1645 accu_d: 0.6387 accu_g: 0.7100 accu_g_gdy: 0.7163
+test: loss_g: 4.6536 loss_g_ae: 4.6536 loss_g_clas: 2.2435 loss_d: 1.6577 accu_d: 0.7123 accu_g: 0.6539 accu_g_gdy: 0.6647
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0003 accu_d: 1.0000
+step: 1, loss_g: 0.2341 loss_g_ae: 0.2341 loss_g_clas: 4.6093 accu_g: 0.3594 accu_g_gdy: 0.3906
+epoch: 30, loss_d: 0.0004 accu_d: 1.0000
+epoch: 30, loss_g: 0.3425 loss_g_ae: 0.3425 loss_g_clas: 3.6337 accu_g: 0.4890 accu_g_gdy: 0.4083
+val: loss_g: 5.4289 loss_g_ae: 5.4289 loss_g_clas: 1.5368 loss_d: 2.1922 accu_d: 0.6387 accu_g: 0.7290 accu_g_gdy: 0.6815
+test: loss_g: 4.6314 loss_g_ae: 4.6314 loss_g_clas: 2.4744 loss_d: 1.6780 accu_d: 0.7136 accu_g: 0.6365 accu_g_gdy: 0.6479
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.2285 loss_g_ae: 0.2285 loss_g_clas: 4.2282 accu_g: 0.4219 accu_g_gdy: 0.3750
+epoch: 31, loss_d: 0.0003 accu_d: 1.0000
+epoch: 31, loss_g: 0.3027 loss_g_ae: 0.3027 loss_g_clas: 3.7908 accu_g: 0.4607 accu_g_gdy: 0.3713
+val: loss_g: 5.5958 loss_g_ae: 5.5958 loss_g_clas: 1.7496 loss_d: 2.2269 accu_d: 0.6403 accu_g: 0.6878 accu_g_gdy: 0.6719
+test: loss_g: 4.8012 loss_g_ae: 4.8012 loss_g_clas: 2.6688 loss_d: 1.6961 accu_d: 0.7129 accu_g: 0.6177 accu_g_gdy: 0.6325
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 0.1980 loss_g_ae: 0.1980 loss_g_clas: 4.2717 accu_g: 0.4219 accu_g_gdy: 0.3438
+epoch: 32, loss_d: 0.0003 accu_d: 1.0000
+epoch: 32, loss_g: 0.3098 loss_g_ae: 0.3098 loss_g_clas: 4.5175 accu_g: 0.4036 accu_g_gdy: 0.3161
+val: loss_g: 5.6007 loss_g_ae: 5.6007 loss_g_clas: 1.9126 loss_d: 2.2581 accu_d: 0.6418 accu_g: 0.6910 accu_g_gdy: 0.6656
+test: loss_g: 4.7858 loss_g_ae: 4.7858 loss_g_clas: 3.0106 loss_d: 1.7140 accu_d: 0.7143 accu_g: 0.5969 accu_g_gdy: 0.5902
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0003 accu_d: 1.0000
+step: 1, loss_g: 0.2217 loss_g_ae: 0.2217 loss_g_clas: 5.2790 accu_g: 0.3438 accu_g_gdy: 0.2188
+epoch: 33, loss_d: 0.0002 accu_d: 1.0000
+epoch: 33, loss_g: 0.3056 loss_g_ae: 0.3056 loss_g_clas: 3.9930 accu_g: 0.4301 accu_g_gdy: 0.3345
+val: loss_g: 5.5348 loss_g_ae: 5.5348 loss_g_clas: 1.9348 loss_d: 2.2771 accu_d: 0.6418 accu_g: 0.6577 accu_g_gdy: 0.6688
+test: loss_g: 4.7062 loss_g_ae: 4.7062 loss_g_clas: 2.9686 loss_d: 1.7310 accu_d: 0.7129 accu_g: 0.6043 accu_g_gdy: 0.6043
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0003 accu_d: 1.0000
+step: 1, loss_g: 0.3667 loss_g_ae: 0.3667 loss_g_clas: 4.2106 accu_g: 0.3906 accu_g_gdy: 0.3125
+epoch: 34, loss_d: 0.0002 accu_d: 1.0000
+epoch: 34, loss_g: 0.2763 loss_g_ae: 0.2763 loss_g_clas: 4.0053 accu_g: 0.4457 accu_g_gdy: 0.3335
+val: loss_g: 5.7961 loss_g_ae: 5.7961 loss_g_clas: 1.9925 loss_d: 2.3117 accu_d: 0.6355 accu_g: 0.7005 accu_g_gdy: 0.6513
+test: loss_g: 4.9265 loss_g_ae: 4.9265 loss_g_clas: 2.7566 loss_d: 1.7626 accu_d: 0.7103 accu_g: 0.6284 accu_g_gdy: 0.6298
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1979 loss_g_ae: 0.1979 loss_g_clas: 4.9698 accu_g: 0.3594 accu_g_gdy: 0.3438
+epoch: 35, loss_d: 0.0002 accu_d: 1.0000
+epoch: 35, loss_g: 0.2761 loss_g_ae: 0.2761 loss_g_clas: 4.7403 accu_g: 0.3737 accu_g_gdy: 0.2975
+val: loss_g: 5.7361 loss_g_ae: 5.7361 loss_g_clas: 1.8828 loss_d: 2.3115 accu_d: 0.6387 accu_g: 0.6910 accu_g_gdy: 0.6561
+test: loss_g: 4.9062 loss_g_ae: 4.9062 loss_g_clas: 2.7929 loss_d: 1.7739 accu_d: 0.7116 accu_g: 0.6372 accu_g_gdy: 0.6271
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.2035 loss_g_ae: 0.2035 loss_g_clas: 4.3559 accu_g: 0.3594 accu_g_gdy: 0.2188
+epoch: 36, loss_d: 0.0003 accu_d: 1.0000
+epoch: 36, loss_g: 0.2420 loss_g_ae: 0.2420 loss_g_clas: 4.6548 accu_g: 0.3952 accu_g_gdy: 0.3323
+val: loss_g: 5.8364 loss_g_ae: 5.8364 loss_g_clas: 1.7973 loss_d: 2.3426 accu_d: 0.6339 accu_g: 0.7100 accu_g_gdy: 0.6672
+test: loss_g: 4.9576 loss_g_ae: 4.9576 loss_g_clas: 2.9242 loss_d: 1.7978 accu_d: 0.7109 accu_g: 0.6137 accu_g_gdy: 0.6170
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.1653 loss_g_ae: 0.1653 loss_g_clas: 7.1211 accu_g: 0.2031 accu_g_gdy: 0.1875
+epoch: 37, loss_d: 0.0004 accu_d: 1.0000
+epoch: 37, loss_g: 0.2252 loss_g_ae: 0.2252 loss_g_clas: 4.9426 accu_g: 0.3626 accu_g_gdy: 0.2940
+val: loss_g: 5.8694 loss_g_ae: 5.8694 loss_g_clas: 1.8470 loss_d: 2.3525 accu_d: 0.6355 accu_g: 0.6878 accu_g_gdy: 0.6561
+test: loss_g: 4.9893 loss_g_ae: 4.9893 loss_g_clas: 2.8083 loss_d: 1.8033 accu_d: 0.7089 accu_g: 0.6177 accu_g_gdy: 0.6244
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0004 accu_d: 1.0000
+step: 1, loss_g: 0.1426 loss_g_ae: 0.1426 loss_g_clas: 4.5634 accu_g: 0.3750 accu_g_gdy: 0.3594
+epoch: 38, loss_d: 0.0001 accu_d: 1.0000
+epoch: 38, loss_g: 0.2092 loss_g_ae: 0.2092 loss_g_clas: 5.2630 accu_g: 0.3391 accu_g_gdy: 0.2756
+val: loss_g: 5.8658 loss_g_ae: 5.8658 loss_g_clas: 2.0010 loss_d: 2.3884 accu_d: 0.6323 accu_g: 0.6862 accu_g_gdy: 0.6529
+test: loss_g: 4.9726 loss_g_ae: 4.9726 loss_g_clas: 2.9622 loss_d: 1.8263 accu_d: 0.7089 accu_g: 0.6144 accu_g_gdy: 0.6130
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1521 loss_g_ae: 0.1521 loss_g_clas: 5.2683 accu_g: 0.3750 accu_g_gdy: 0.2656
+epoch: 39, loss_d: 0.0002 accu_d: 1.0000
+epoch: 39, loss_g: 0.2025 loss_g_ae: 0.2025 loss_g_clas: 5.1619 accu_g: 0.3906 accu_g_gdy: 0.3553
+val: loss_g: 5.9413 loss_g_ae: 5.9413 loss_g_clas: 2.1303 loss_d: 2.4323 accu_d: 0.6292 accu_g: 0.6704 accu_g_gdy: 0.6609
+test: loss_g: 5.0277 loss_g_ae: 5.0277 loss_g_clas: 3.1052 loss_d: 1.8511 accu_d: 0.7123 accu_g: 0.6231 accu_g_gdy: 0.6358
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1324 loss_g_ae: 0.1324 loss_g_clas: 6.5211 accu_g: 0.3281 accu_g_gdy: 0.2188
+epoch: 40, loss_d: 0.0002 accu_d: 1.0000
+epoch: 40, loss_g: 0.2122 loss_g_ae: 0.2122 loss_g_clas: 5.7311 accu_g: 0.3395 accu_g_gdy: 0.2481
+val: loss_g: 5.9738 loss_g_ae: 5.9738 loss_g_clas: 2.0283 loss_d: 2.4345 accu_d: 0.6292 accu_g: 0.6767 accu_g_gdy: 0.6545
+test: loss_g: 5.0946 loss_g_ae: 5.0946 loss_g_clas: 3.1085 loss_d: 1.8678 accu_d: 0.7109 accu_g: 0.6137 accu_g_gdy: 0.6103
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1575 loss_g_ae: 0.1575 loss_g_clas: 6.0090 accu_g: 0.2656 accu_g_gdy: 0.2031
+epoch: 41, loss_d: 0.0001 accu_d: 1.0000
+epoch: 41, loss_g: 0.1808 loss_g_ae: 0.1808 loss_g_clas: 5.6072 accu_g: 0.3250 accu_g_gdy: 0.2653
+val: loss_g: 5.9431 loss_g_ae: 5.9431 loss_g_clas: 2.0175 loss_d: 2.4500 accu_d: 0.6276 accu_g: 0.6688 accu_g_gdy: 0.6466
+test: loss_g: 5.0464 loss_g_ae: 5.0464 loss_g_clas: 3.0876 loss_d: 1.8799 accu_d: 0.7109 accu_g: 0.5962 accu_g_gdy: 0.6130
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1749 loss_g_ae: 0.1749 loss_g_clas: 5.2451 accu_g: 0.2812 accu_g_gdy: 0.1250
+epoch: 42, loss_d: 0.0001 accu_d: 1.0000
+epoch: 42, loss_g: 0.1892 loss_g_ae: 0.1892 loss_g_clas: 5.5937 accu_g: 0.3306 accu_g_gdy: 0.2734
+val: loss_g: 5.9247 loss_g_ae: 5.9247 loss_g_clas: 1.9377 loss_d: 2.4731 accu_d: 0.6292 accu_g: 0.7052 accu_g_gdy: 0.6656
+test: loss_g: 5.0785 loss_g_ae: 5.0785 loss_g_clas: 3.0157 loss_d: 1.8920 accu_d: 0.7103 accu_g: 0.6311 accu_g_gdy: 0.6197
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.1405 loss_g_ae: 0.1405 loss_g_clas: 6.2502 accu_g: 0.2344 accu_g_gdy: 0.1719
+epoch: 43, loss_d: 0.0001 accu_d: 1.0000
+epoch: 43, loss_g: 0.1683 loss_g_ae: 0.1683 loss_g_clas: 5.9950 accu_g: 0.2766 accu_g_gdy: 0.2423
+val: loss_g: 5.9980 loss_g_ae: 5.9980 loss_g_clas: 2.1587 loss_d: 2.5106 accu_d: 0.6244 accu_g: 0.6719 accu_g_gdy: 0.6640
+test: loss_g: 5.1193 loss_g_ae: 5.1193 loss_g_clas: 3.1243 loss_d: 1.9107 accu_d: 0.7096 accu_g: 0.6130 accu_g_gdy: 0.6244
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.1328 loss_g_ae: 0.1328 loss_g_clas: 8.6194 accu_g: 0.2031 accu_g_gdy: 0.1250
+epoch: 44, loss_d: 0.0001 accu_d: 1.0000
+epoch: 44, loss_g: 0.1746 loss_g_ae: 0.1746 loss_g_clas: 6.3443 accu_g: 0.3012 accu_g_gdy: 0.2327
+val: loss_g: 6.1114 loss_g_ae: 6.1114 loss_g_clas: 2.1780 loss_d: 2.5272 accu_d: 0.6228 accu_g: 0.6719 accu_g_gdy: 0.6513
+test: loss_g: 5.2169 loss_g_ae: 5.2169 loss_g_clas: 3.1118 loss_d: 1.9257 accu_d: 0.7069 accu_g: 0.6097 accu_g_gdy: 0.6097
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1279 loss_g_ae: 0.1279 loss_g_clas: 6.4158 accu_g: 0.2969 accu_g_gdy: 0.2031
+epoch: 45, loss_d: 0.0001 accu_d: 1.0000
+epoch: 45, loss_g: 0.1532 loss_g_ae: 0.1532 loss_g_clas: 5.9105 accu_g: 0.2937 accu_g_gdy: 0.2283
+val: loss_g: 6.0284 loss_g_ae: 6.0284 loss_g_clas: 2.2994 loss_d: 2.5528 accu_d: 0.6276 accu_g: 0.6577 accu_g_gdy: 0.6307
+test: loss_g: 5.1211 loss_g_ae: 5.1211 loss_g_clas: 3.0346 loss_d: 1.9415 accu_d: 0.7096 accu_g: 0.6311 accu_g_gdy: 0.6076
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.1476 loss_g_ae: 0.1476 loss_g_clas: 5.9270 accu_g: 0.3125 accu_g_gdy: 0.1562
+epoch: 46, loss_d: 0.0001 accu_d: 1.0000
+epoch: 46, loss_g: 0.2032 loss_g_ae: 0.2032 loss_g_clas: 5.6979 accu_g: 0.3255 accu_g_gdy: 0.2771
+val: loss_g: 5.9543 loss_g_ae: 5.9543 loss_g_clas: 2.1308 loss_d: 2.5562 accu_d: 0.6292 accu_g: 0.6846 accu_g_gdy: 0.6498
+test: loss_g: 5.0180 loss_g_ae: 5.0180 loss_g_clas: 3.2419 loss_d: 1.9548 accu_d: 0.7096 accu_g: 0.6036 accu_g_gdy: 0.5983
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.1075 loss_g_ae: 0.1075 loss_g_clas: 6.5335 accu_g: 0.2656 accu_g_gdy: 0.1406
+epoch: 47, loss_d: 0.0001 accu_d: 1.0000
+epoch: 47, loss_g: 0.2023 loss_g_ae: 0.2023 loss_g_clas: 6.2786 accu_g: 0.2921 accu_g_gdy: 0.2163
+val: loss_g: 6.0249 loss_g_ae: 6.0249 loss_g_clas: 2.4643 loss_d: 2.5771 accu_d: 0.6276 accu_g: 0.6371 accu_g_gdy: 0.5975
+test: loss_g: 5.0686 loss_g_ae: 5.0686 loss_g_clas: 3.3143 loss_d: 1.9659 accu_d: 0.7103 accu_g: 0.5983 accu_g_gdy: 0.5775
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.4223 loss_g_ae: 0.4223 loss_g_clas: 7.4687 accu_g: 0.2344 accu_g_gdy: 0.1562
+epoch: 48, loss_d: 0.0001 accu_d: 1.0000
+epoch: 48, loss_g: 0.1476 loss_g_ae: 0.1476 loss_g_clas: 6.7726 accu_g: 0.2779 accu_g_gdy: 0.1982
+val: loss_g: 6.0914 loss_g_ae: 6.0914 loss_g_clas: 2.3930 loss_d: 2.6143 accu_d: 0.6276 accu_g: 0.6704 accu_g_gdy: 0.6339
+test: loss_g: 5.1609 loss_g_ae: 5.1609 loss_g_clas: 3.3526 loss_d: 1.9795 accu_d: 0.7076 accu_g: 0.6144 accu_g_gdy: 0.6070
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.1477 loss_g_ae: 0.1477 loss_g_clas: 6.4546 accu_g: 0.2969 accu_g_gdy: 0.2344
+epoch: 49, loss_d: 0.0001 accu_d: 1.0000
+epoch: 49, loss_g: 0.1228 loss_g_ae: 0.1228 loss_g_clas: 7.3782 accu_g: 0.2411 accu_g_gdy: 0.1960
+val: loss_g: 5.9915 loss_g_ae: 5.9915 loss_g_clas: 2.6097 loss_d: 2.6294 accu_d: 0.6292 accu_g: 0.6339 accu_g_gdy: 0.6197
+test: loss_g: 5.0889 loss_g_ae: 5.0889 loss_g_clas: 3.6699 loss_d: 1.9962 accu_d: 0.7096 accu_g: 0.5728 accu_g_gdy: 0.5848
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.0966 loss_g_ae: 0.0966 loss_g_clas: 6.8889 accu_g: 0.1562 accu_g_gdy: 0.1406
+epoch: 50, loss_d: 0.0001 accu_d: 1.0000
+epoch: 50, loss_g: 0.1102 loss_g_ae: 0.1102 loss_g_clas: 7.0690 accu_g: 0.2533 accu_g_gdy: 0.2096
+val: loss_g: 6.1608 loss_g_ae: 6.1608 loss_g_clas: 2.3541 loss_d: 2.6468 accu_d: 0.6292 accu_g: 0.6767 accu_g_gdy: 0.6783
+test: loss_g: 5.2024 loss_g_ae: 5.2024 loss_g_clas: 3.4663 loss_d: 2.0075 accu_d: 0.7103 accu_g: 0.6030 accu_g_gdy: 0.6123
+gamma: 0.5, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.8152 loss_g_ae: 0.0923 loss_g_clas: 7.2291 accu_g: 0.3125 accu_g_gdy: 0.2188
+epoch: 51, loss_d: 0.0000 accu_d: 1.0000
+epoch: 51, loss_g: 0.7227 loss_g_ae: 0.6400 loss_g_clas: 0.8264 accu_g: 0.8537 accu_g_gdy: 0.8392
+val: loss_g: 7.2305 loss_g_ae: 7.2033 loss_g_clas: 0.2726 loss_d: 2.6612 accu_d: 0.6228 accu_g: 0.9429 accu_g_gdy: 0.9398
+test: loss_g: 6.0532 loss_g_ae: 6.0116 loss_g_clas: 0.4160 loss_d: 2.0241 accu_d: 0.7089 accu_g: 0.9256 accu_g_gdy: 0.9229
+gamma: 0.25, lambda_g: 0.1
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 0.5901 loss_g_ae: 0.4964 loss_g_clas: 0.9363 accu_g: 0.8438 accu_g_gdy: 0.7969
+epoch: 52, loss_d: 0.0001 accu_d: 1.0000
+epoch: 52, loss_g: 4.0638 loss_g_ae: 3.9854 loss_g_clas: 0.7836 accu_g: 0.8480 accu_g_gdy: 0.8112
+val: loss_g: 8.3770 loss_g_ae: 8.3354 loss_g_clas: 0.4160 loss_d: 2.6729 accu_d: 0.6228 accu_g: 0.8970 accu_g_gdy: 0.8859
+test: loss_g: 7.4244 loss_g_ae: 7.3739 loss_g_clas: 0.5045 loss_d: 2.0374 accu_d: 0.7096 accu_g: 0.9001 accu_g_gdy: 0.8987
+gamma: 0.125, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.9125 loss_g_ae: 3.8268 loss_g_clas: 0.8568 accu_g: 0.8281 accu_g_gdy: 0.8125
+epoch: 53, loss_d: 0.0001 accu_d: 1.0000
+epoch: 53, loss_g: 1.7721 loss_g_ae: 1.6496 loss_g_clas: 1.2248 accu_g: 0.7951 accu_g_gdy: 0.8076
+val: loss_g: 6.6237 loss_g_ae: 6.5460 loss_g_clas: 0.7766 loss_d: 2.6920 accu_d: 0.6244 accu_g: 0.8669 accu_g_gdy: 0.8510
+test: loss_g: 5.6667 loss_g_ae: 5.5981 loss_g_clas: 0.6855 loss_d: 2.0500 accu_d: 0.7096 accu_g: 0.8766 accu_g_gdy: 0.8739
+gamma: 0.0625, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2374 loss_g_ae: 1.1726 loss_g_clas: 0.6478 accu_g: 0.8750 accu_g_gdy: 0.7812
+epoch: 54, loss_d: 0.0001 accu_d: 1.0000
+epoch: 54, loss_g: 1.1457 loss_g_ae: 1.1002 loss_g_clas: 0.4555 accu_g: 0.9095 accu_g_gdy: 0.9065
+val: loss_g: 6.7322 loss_g_ae: 6.7108 loss_g_clas: 0.2138 loss_d: 2.7119 accu_d: 0.6197 accu_g: 0.9540 accu_g_gdy: 0.9635
+test: loss_g: 5.6483 loss_g_ae: 5.6138 loss_g_clas: 0.3444 loss_d: 2.0632 accu_d: 0.7103 accu_g: 0.9403 accu_g_gdy: 0.9376
+gamma: 0.03125, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 0.8049 loss_g_ae: 0.7586 loss_g_clas: 0.4626 accu_g: 0.9375 accu_g_gdy: 0.8281
+epoch: 55, loss_d: 0.0001 accu_d: 1.0000
+epoch: 55, loss_g: 0.9290 loss_g_ae: 0.7827 loss_g_clas: 1.4632 accu_g: 0.8022 accu_g_gdy: 0.7837
+val: loss_g: 6.5003 loss_g_ae: 6.4331 loss_g_clas: 0.6720 loss_d: 2.7308 accu_d: 0.6197 accu_g: 0.8938 accu_g_gdy: 0.8938
+test: loss_g: 5.4945 loss_g_ae: 5.4205 loss_g_clas: 0.7396 loss_d: 2.0768 accu_d: 0.7103 accu_g: 0.8672 accu_g_gdy: 0.8706
+gamma: 0.015625, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.7753 loss_g_ae: 0.6303 loss_g_clas: 1.4498 accu_g: 0.7656 accu_g_gdy: 0.6875
+epoch: 56, loss_d: 0.0000 accu_d: 1.0000
+epoch: 56, loss_g: 1.2471 loss_g_ae: 1.1439 loss_g_clas: 1.0316 accu_g: 0.8289 accu_g_gdy: 0.8373
+val: loss_g: 7.2246 loss_g_ae: 7.1869 loss_g_clas: 0.3777 loss_d: 2.7351 accu_d: 0.6212 accu_g: 0.9319 accu_g_gdy: 0.9382
+test: loss_g: 6.1645 loss_g_ae: 6.1330 loss_g_clas: 0.3152 loss_d: 2.0942 accu_d: 0.7096 accu_g: 0.9329 accu_g_gdy: 0.9370
+gamma: 0.0078125, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9727 loss_g_ae: 0.8960 loss_g_clas: 0.7676 accu_g: 0.8594 accu_g_gdy: 0.8594
+epoch: 57, loss_d: 0.0001 accu_d: 1.0000
+epoch: 57, loss_g: 1.2767 loss_g_ae: 1.2058 loss_g_clas: 0.7088 accu_g: 0.8897 accu_g_gdy: 0.8851
+val: loss_g: 7.4877 loss_g_ae: 7.4631 loss_g_clas: 0.2455 loss_d: 2.7566 accu_d: 0.6228 accu_g: 0.9651 accu_g_gdy: 0.9525
+test: loss_g: 6.2551 loss_g_ae: 6.2304 loss_g_clas: 0.2470 loss_d: 2.1056 accu_d: 0.7096 accu_g: 0.9584 accu_g_gdy: 0.9705
+gamma: 0.00390625, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9997 loss_g_ae: 0.9306 loss_g_clas: 0.6910 accu_g: 0.8750 accu_g_gdy: 0.8750
+epoch: 58, loss_d: 0.0001 accu_d: 1.0000
+epoch: 58, loss_g: 1.1418 loss_g_ae: 0.9441 loss_g_clas: 1.9767 accu_g: 0.7139 accu_g_gdy: 0.6795
+val: loss_g: 7.0527 loss_g_ae: 6.9420 loss_g_clas: 1.1072 loss_d: 2.7783 accu_d: 0.6212 accu_g: 0.8067 accu_g_gdy: 0.8114
+test: loss_g: 6.0256 loss_g_ae: 5.9013 loss_g_clas: 1.2432 loss_d: 2.1196 accu_d: 0.7109 accu_g: 0.8102 accu_g_gdy: 0.8062
+gamma: 0.001953125, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0184 loss_g_ae: 0.7425 loss_g_clas: 2.7584 accu_g: 0.6562 accu_g_gdy: 0.6719
+epoch: 59, loss_d: 0.0000 accu_d: 1.0000
+epoch: 59, loss_g: 1.5081 loss_g_ae: 1.4022 loss_g_clas: 1.0586 accu_g: 0.8210 accu_g_gdy: 0.8075
+val: loss_g: 8.2515 loss_g_ae: 8.2039 loss_g_clas: 0.4760 loss_d: 2.8096 accu_d: 0.6197 accu_g: 0.9144 accu_g_gdy: 0.9128
+test: loss_g: 7.1186 loss_g_ae: 7.0696 loss_g_clas: 0.4902 loss_d: 2.1397 accu_d: 0.7103 accu_g: 0.9108 accu_g_gdy: 0.9182
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7416 loss_g_ae: 1.6187 loss_g_clas: 1.2291 accu_g: 0.8438 accu_g_gdy: 0.7656
+epoch: 60, loss_d: 0.0001 accu_d: 1.0000
+epoch: 60, loss_g: 3.1283 loss_g_ae: 3.0137 loss_g_clas: 1.1462 accu_g: 0.8362 accu_g_gdy: 0.8290
+val: loss_g: 9.0595 loss_g_ae: 8.9103 loss_g_clas: 1.4920 loss_d: 2.8129 accu_d: 0.6212 accu_g: 0.7670 accu_g_gdy: 0.7829
+test: loss_g: 7.7958 loss_g_ae: 7.6091 loss_g_clas: 1.8662 loss_d: 2.1468 accu_d: 0.7089 accu_g: 0.7425 accu_g_gdy: 0.7478
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.3762 loss_g_ae: 3.1796 loss_g_clas: 1.9665 accu_g: 0.7500 accu_g_gdy: 0.8125
+epoch: 61, loss_d: 0.0001 accu_d: 1.0000
+epoch: 61, loss_g: 2.2260 loss_g_ae: 2.0089 loss_g_clas: 2.1710 accu_g: 0.7221 accu_g_gdy: 0.6796
+val: loss_g: 7.2013 loss_g_ae: 7.0476 loss_g_clas: 1.5379 loss_d: 2.8269 accu_d: 0.6244 accu_g: 0.7876 accu_g_gdy: 0.7845
+test: loss_g: 6.2591 loss_g_ae: 6.0318 loss_g_clas: 2.2731 loss_d: 2.1582 accu_d: 0.7082 accu_g: 0.7223 accu_g_gdy: 0.7210
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6737 loss_g_ae: 1.4845 loss_g_clas: 1.8916 accu_g: 0.7031 accu_g_gdy: 0.6719
+epoch: 62, loss_d: 0.0000 accu_d: 1.0000
+epoch: 62, loss_g: 1.1659 loss_g_ae: 0.9143 loss_g_clas: 2.5159 accu_g: 0.6938 accu_g_gdy: 0.6891
+val: loss_g: 7.1454 loss_g_ae: 7.0251 loss_g_clas: 1.2028 loss_d: 2.8654 accu_d: 0.6212 accu_g: 0.8209 accu_g_gdy: 0.8352
+test: loss_g: 6.0780 loss_g_ae: 5.9132 loss_g_clas: 1.6472 loss_d: 2.1805 accu_d: 0.7082 accu_g: 0.7867 accu_g_gdy: 0.7780
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.8785 loss_g_ae: 1.6917 loss_g_clas: 1.8677 accu_g: 0.7500 accu_g_gdy: 0.7031
+epoch: 63, loss_d: 0.0000 accu_d: 1.0000
+epoch: 63, loss_g: 1.7606 loss_g_ae: 1.4710 loss_g_clas: 2.8962 accu_g: 0.6506 accu_g_gdy: 0.6445
+val: loss_g: 7.1873 loss_g_ae: 7.0266 loss_g_clas: 1.6070 loss_d: 2.8932 accu_d: 0.6228 accu_g: 0.7781 accu_g_gdy: 0.7765
+test: loss_g: 6.1332 loss_g_ae: 5.8867 loss_g_clas: 2.4653 loss_d: 2.1955 accu_d: 0.7082 accu_g: 0.7069 accu_g_gdy: 0.7002
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.1138 loss_g_ae: 0.8140 loss_g_clas: 2.9976 accu_g: 0.6562 accu_g_gdy: 0.6406
+epoch: 64, loss_d: 0.0000 accu_d: 1.0000
+epoch: 64, loss_g: 5.3085 loss_g_ae: 5.0481 loss_g_clas: 2.6043 accu_g: 0.7198 accu_g_gdy: 0.7347
+val: loss_g: 9.5965 loss_g_ae: 9.3120 loss_g_clas: 2.8458 loss_d: 2.9064 accu_d: 0.6197 accu_g: 0.6910 accu_g_gdy: 0.6894
+test: loss_g: 8.5515 loss_g_ae: 8.2658 loss_g_clas: 2.8570 loss_d: 2.2095 accu_d: 0.7103 accu_g: 0.7156 accu_g_gdy: 0.7143
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.5919 loss_g_ae: 3.3226 loss_g_clas: 2.6925 accu_g: 0.7031 accu_g_gdy: 0.6562
+epoch: 65, loss_d: 0.0000 accu_d: 1.0000
+epoch: 65, loss_g: 1.4395 loss_g_ae: 1.1789 loss_g_clas: 2.6064 accu_g: 0.6718 accu_g_gdy: 0.6687
+val: loss_g: 7.5970 loss_g_ae: 7.4965 loss_g_clas: 1.0051 loss_d: 2.9432 accu_d: 0.6260 accu_g: 0.8494 accu_g_gdy: 0.8399
+test: loss_g: 6.4914 loss_g_ae: 6.3832 loss_g_clas: 1.0822 loss_d: 2.2329 accu_d: 0.7089 accu_g: 0.8236 accu_g_gdy: 0.8337
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.5181 loss_g_ae: 1.3530 loss_g_clas: 1.6514 accu_g: 0.7812 accu_g_gdy: 0.7500
+epoch: 66, loss_d: 0.0000 accu_d: 1.0000
+epoch: 66, loss_g: 1.7630 loss_g_ae: 1.6413 loss_g_clas: 1.2170 accu_g: 0.8030 accu_g_gdy: 0.8259
+val: loss_g: 8.4521 loss_g_ae: 8.3759 loss_g_clas: 0.7614 loss_d: 2.9420 accu_d: 0.6197 accu_g: 0.8906 accu_g_gdy: 0.8732
+test: loss_g: 7.2113 loss_g_ae: 7.1231 loss_g_clas: 0.8819 loss_d: 2.2343 accu_d: 0.7062 accu_g: 0.8652 accu_g_gdy: 0.8511
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.8811 loss_g_ae: 1.7453 loss_g_clas: 1.3582 accu_g: 0.7969 accu_g_gdy: 0.8281
+epoch: 67, loss_d: 0.0000 accu_d: 1.0000
+epoch: 67, loss_g: 4.3210 loss_g_ae: 4.1210 loss_g_clas: 1.9998 accu_g: 0.7981 accu_g_gdy: 0.8038
+val: loss_g: 9.3415 loss_g_ae: 9.3072 loss_g_clas: 0.3427 loss_d: 2.9430 accu_d: 0.6228 accu_g: 0.9382 accu_g_gdy: 0.9398
+test: loss_g: 7.6347 loss_g_ae: 7.5866 loss_g_clas: 0.4806 loss_d: 2.2405 accu_d: 0.7069 accu_g: 0.9229 accu_g_gdy: 0.9235
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.3854 loss_g_ae: 2.3113 loss_g_clas: 0.7410 accu_g: 0.8750 accu_g_gdy: 0.8438
+epoch: 68, loss_d: 0.0000 accu_d: 1.0000
+epoch: 68, loss_g: 1.3012 loss_g_ae: 1.1395 loss_g_clas: 1.6169 accu_g: 0.7885 accu_g_gdy: 0.7404
+val: loss_g: 8.2618 loss_g_ae: 8.1605 loss_g_clas: 1.0133 loss_d: 2.9805 accu_d: 0.6197 accu_g: 0.8257 accu_g_gdy: 0.8288
+test: loss_g: 6.8847 loss_g_ae: 6.7907 loss_g_clas: 0.9402 loss_d: 2.2622 accu_d: 0.7076 accu_g: 0.8531 accu_g_gdy: 0.8437
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1701 loss_g_ae: 0.9928 loss_g_clas: 1.7723 accu_g: 0.7656 accu_g_gdy: 0.7344
+epoch: 69, loss_d: 0.0000 accu_d: 1.0000
+epoch: 69, loss_g: 1.0594 loss_g_ae: 0.8507 loss_g_clas: 2.0865 accu_g: 0.7255 accu_g_gdy: 0.7405
+val: loss_g: 7.5048 loss_g_ae: 7.3718 loss_g_clas: 1.3297 loss_d: 2.9955 accu_d: 0.6212 accu_g: 0.8098 accu_g_gdy: 0.8177
+test: loss_g: 6.3915 loss_g_ae: 6.2567 loss_g_clas: 1.3476 loss_d: 2.2707 accu_d: 0.7062 accu_g: 0.8156 accu_g_gdy: 0.8102
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9100 loss_g_ae: 0.7210 loss_g_clas: 1.8901 accu_g: 0.7344 accu_g_gdy: 0.6719
+epoch: 70, loss_d: 0.0000 accu_d: 1.0000
+epoch: 70, loss_g: 0.8935 loss_g_ae: 0.7218 loss_g_clas: 1.7170 accu_g: 0.7670 accu_g_gdy: 0.7892
+val: loss_g: 7.4421 loss_g_ae: 7.3715 loss_g_clas: 0.7068 loss_d: 3.0248 accu_d: 0.6197 accu_g: 0.8780 accu_g_gdy: 0.8780
+test: loss_g: 6.2664 loss_g_ae: 6.1614 loss_g_clas: 1.0505 loss_d: 2.2870 accu_d: 0.7089 accu_g: 0.8592 accu_g_gdy: 0.8625
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.7062 loss_g_ae: 0.5663 loss_g_clas: 1.3986 accu_g: 0.7969 accu_g_gdy: 0.8281
+epoch: 71, loss_d: 0.0000 accu_d: 1.0000
+epoch: 71, loss_g: 1.4474 loss_g_ae: 1.2748 loss_g_clas: 1.7263 accu_g: 0.7550 accu_g_gdy: 0.7488
+val: loss_g: 8.1344 loss_g_ae: 8.0311 loss_g_clas: 1.0327 loss_d: 3.0338 accu_d: 0.6165 accu_g: 0.8336 accu_g_gdy: 0.8352
+test: loss_g: 6.8619 loss_g_ae: 6.7323 loss_g_clas: 1.2962 loss_d: 2.2996 accu_d: 0.7062 accu_g: 0.8048 accu_g_gdy: 0.8142
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2087 loss_g_ae: 1.0286 loss_g_clas: 1.8016 accu_g: 0.7500 accu_g_gdy: 0.6719
+epoch: 72, loss_d: 0.0000 accu_d: 1.0000
+epoch: 72, loss_g: 1.1795 loss_g_ae: 0.8807 loss_g_clas: 2.9875 accu_g: 0.6423 accu_g_gdy: 0.6097
+val: loss_g: 7.6095 loss_g_ae: 7.4624 loss_g_clas: 1.4709 loss_d: 3.0397 accu_d: 0.6181 accu_g: 0.7940 accu_g_gdy: 0.7892
+test: loss_g: 6.5055 loss_g_ae: 6.3269 loss_g_clas: 1.7864 loss_d: 2.3122 accu_d: 0.7076 accu_g: 0.7706 accu_g_gdy: 0.7653
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.8590 loss_g_ae: 0.4849 loss_g_clas: 3.7420 accu_g: 0.6094 accu_g_gdy: 0.5469
+epoch: 73, loss_d: 0.0000 accu_d: 1.0000
+epoch: 73, loss_g: 2.5418 loss_g_ae: 2.3731 loss_g_clas: 1.6868 accu_g: 0.7972 accu_g_gdy: 0.7530
+val: loss_g: 8.8970 loss_g_ae: 8.7776 loss_g_clas: 1.1940 loss_d: 3.0470 accu_d: 0.6197 accu_g: 0.8193 accu_g_gdy: 0.8352
+test: loss_g: 7.5010 loss_g_ae: 7.4004 loss_g_clas: 1.0062 loss_d: 2.3196 accu_d: 0.7089 accu_g: 0.8397 accu_g_gdy: 0.8518
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.4635 loss_g_ae: 2.3446 loss_g_clas: 1.1898 accu_g: 0.8125 accu_g_gdy: 0.8594
+epoch: 74, loss_d: 0.0000 accu_d: 1.0000
+epoch: 74, loss_g: 1.2236 loss_g_ae: 1.0362 loss_g_clas: 1.8746 accu_g: 0.7504 accu_g_gdy: 0.7650
+val: loss_g: 7.6541 loss_g_ae: 7.5147 loss_g_clas: 1.3933 loss_d: 3.0716 accu_d: 0.6197 accu_g: 0.8257 accu_g_gdy: 0.8304
+test: loss_g: 6.3879 loss_g_ae: 6.2541 loss_g_clas: 1.3379 loss_d: 2.3313 accu_d: 0.7089 accu_g: 0.8276 accu_g_gdy: 0.8236
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9853 loss_g_ae: 0.6844 loss_g_clas: 3.0089 accu_g: 0.5938 accu_g_gdy: 0.6406
+epoch: 75, loss_d: 0.0000 accu_d: 1.0000
+epoch: 75, loss_g: 2.9572 loss_g_ae: 2.7040 loss_g_clas: 2.5325 accu_g: 0.6928 accu_g_gdy: 0.6766
+val: loss_g: 9.1085 loss_g_ae: 8.8770 loss_g_clas: 2.3151 loss_d: 3.1023 accu_d: 0.6244 accu_g: 0.7100 accu_g_gdy: 0.7068
+test: loss_g: 7.6645 loss_g_ae: 7.4353 loss_g_clas: 2.2925 loss_d: 2.3493 accu_d: 0.7076 accu_g: 0.7170 accu_g_gdy: 0.7384
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.0756 loss_g_ae: 1.7101 loss_g_clas: 3.6554 accu_g: 0.5938 accu_g_gdy: 0.7344
+epoch: 76, loss_d: 0.0000 accu_d: 1.0000
+epoch: 76, loss_g: 2.9832 loss_g_ae: 2.8361 loss_g_clas: 1.4719 accu_g: 0.7966 accu_g_gdy: 0.7799
+val: loss_g: 10.0041 loss_g_ae: 9.9120 loss_g_clas: 0.9202 loss_d: 3.0960 accu_d: 0.6197 accu_g: 0.8336 accu_g_gdy: 0.8415
+test: loss_g: 8.2734 loss_g_ae: 8.2045 loss_g_clas: 0.6888 loss_d: 2.3556 accu_d: 0.7089 accu_g: 0.8739 accu_g_gdy: 0.8665
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.4514 loss_g_ae: 3.2844 loss_g_clas: 1.6702 accu_g: 0.7500 accu_g_gdy: 0.6719
+epoch: 77, loss_d: 0.0000 accu_d: 1.0000
+epoch: 77, loss_g: 1.8375 loss_g_ae: 1.6779 loss_g_clas: 1.5969 accu_g: 0.7859 accu_g_gdy: 0.8059
+val: loss_g: 8.5280 loss_g_ae: 8.4055 loss_g_clas: 1.2256 loss_d: 3.1137 accu_d: 0.6197 accu_g: 0.8320 accu_g_gdy: 0.8320
+test: loss_g: 7.1851 loss_g_ae: 7.0620 loss_g_clas: 1.2306 loss_d: 2.3694 accu_d: 0.7076 accu_g: 0.8310 accu_g_gdy: 0.8303
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6436 loss_g_ae: 1.5996 loss_g_clas: 0.4401 accu_g: 0.8750 accu_g_gdy: 0.8125
+epoch: 78, loss_d: 0.0000 accu_d: 1.0000
+epoch: 78, loss_g: 1.1080 loss_g_ae: 0.8745 loss_g_clas: 2.3354 accu_g: 0.7069 accu_g_gdy: 0.6915
+val: loss_g: 7.8304 loss_g_ae: 7.6867 loss_g_clas: 1.4372 loss_d: 3.1506 accu_d: 0.6244 accu_g: 0.8003 accu_g_gdy: 0.8035
+test: loss_g: 6.5917 loss_g_ae: 6.4159 loss_g_clas: 1.7583 loss_d: 2.3868 accu_d: 0.7096 accu_g: 0.7827 accu_g_gdy: 0.7807
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9576 loss_g_ae: 0.6570 loss_g_clas: 3.0064 accu_g: 0.6406 accu_g_gdy: 0.5781
+epoch: 79, loss_d: 0.0000 accu_d: 1.0000
+epoch: 79, loss_g: 1.2512 loss_g_ae: 0.9905 loss_g_clas: 2.6071 accu_g: 0.6979 accu_g_gdy: 0.6984
+val: loss_g: 8.0930 loss_g_ae: 7.9633 loss_g_clas: 1.2972 loss_d: 3.1437 accu_d: 0.6228 accu_g: 0.8225 accu_g_gdy: 0.8082
+test: loss_g: 6.8349 loss_g_ae: 6.6769 loss_g_clas: 1.5801 loss_d: 2.3919 accu_d: 0.7076 accu_g: 0.7954 accu_g_gdy: 0.7901
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2396 loss_g_ae: 0.9706 loss_g_clas: 2.6895 accu_g: 0.7188 accu_g_gdy: 0.6875
+epoch: 80, loss_d: 0.0000 accu_d: 1.0000
+epoch: 80, loss_g: 1.9456 loss_g_ae: 1.6572 loss_g_clas: 2.8841 accu_g: 0.6418 accu_g_gdy: 0.6647
+val: loss_g: 8.2326 loss_g_ae: 8.0537 loss_g_clas: 1.7889 loss_d: 3.1726 accu_d: 0.6228 accu_g: 0.7797 accu_g_gdy: 0.7734
+test: loss_g: 7.0741 loss_g_ae: 6.8299 loss_g_clas: 2.4427 loss_d: 2.4069 accu_d: 0.7082 accu_g: 0.7404 accu_g_gdy: 0.7203
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.0182 loss_g_ae: 1.7179 loss_g_clas: 3.0025 accu_g: 0.6094 accu_g_gdy: 0.6719
+epoch: 81, loss_d: 0.0000 accu_d: 1.0000
+epoch: 81, loss_g: 1.2049 loss_g_ae: 1.0743 loss_g_clas: 1.3061 accu_g: 0.8302 accu_g_gdy: 0.8292
+val: loss_g: 8.0203 loss_g_ae: 7.9512 loss_g_clas: 0.6907 loss_d: 3.1708 accu_d: 0.6212 accu_g: 0.8780 accu_g_gdy: 0.8891
+test: loss_g: 6.7261 loss_g_ae: 6.6363 loss_g_clas: 0.8983 loss_d: 2.4185 accu_d: 0.7082 accu_g: 0.8699 accu_g_gdy: 0.8585
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9949 loss_g_ae: 0.9041 loss_g_clas: 0.9086 accu_g: 0.8906 accu_g_gdy: 0.8125
+epoch: 82, loss_d: 0.0000 accu_d: 1.0000
+epoch: 82, loss_g: 1.1631 loss_g_ae: 0.9529 loss_g_clas: 2.1016 accu_g: 0.7290 accu_g_gdy: 0.6975
+val: loss_g: 8.0249 loss_g_ae: 7.8795 loss_g_clas: 1.4538 loss_d: 3.1795 accu_d: 0.6244 accu_g: 0.8051 accu_g_gdy: 0.8003
+test: loss_g: 6.7516 loss_g_ae: 6.5890 loss_g_clas: 1.6262 loss_d: 2.4249 accu_d: 0.7069 accu_g: 0.7921 accu_g_gdy: 0.7934
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3223 loss_g_ae: 1.1297 loss_g_clas: 1.9252 accu_g: 0.7500 accu_g_gdy: 0.7031
+epoch: 83, loss_d: 0.0000 accu_d: 1.0000
+epoch: 83, loss_g: 2.0525 loss_g_ae: 1.8716 loss_g_clas: 1.8093 accu_g: 0.7685 accu_g_gdy: 0.7403
+val: loss_g: 8.6882 loss_g_ae: 8.5430 loss_g_clas: 1.4521 loss_d: 3.2192 accu_d: 0.6244 accu_g: 0.8146 accu_g_gdy: 0.8257
+test: loss_g: 7.1584 loss_g_ae: 7.0140 loss_g_clas: 1.4439 loss_d: 2.4485 accu_d: 0.7096 accu_g: 0.8162 accu_g_gdy: 0.8089
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.4174 loss_g_ae: 2.2574 loss_g_clas: 1.6000 accu_g: 0.7812 accu_g_gdy: 0.7188
+epoch: 84, loss_d: 0.0000 accu_d: 1.0000
+epoch: 84, loss_g: 1.5631 loss_g_ae: 1.3376 loss_g_clas: 2.2552 accu_g: 0.7411 accu_g_gdy: 0.7472
+val: loss_g: 7.8658 loss_g_ae: 7.7384 loss_g_clas: 1.2735 loss_d: 3.2178 accu_d: 0.6228 accu_g: 0.8273 accu_g_gdy: 0.8399
+test: loss_g: 6.6570 loss_g_ae: 6.4790 loss_g_clas: 1.7800 loss_d: 2.4578 accu_d: 0.7096 accu_g: 0.7954 accu_g_gdy: 0.7981
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3735 loss_g_ae: 1.1557 loss_g_clas: 2.1770 accu_g: 0.7344 accu_g_gdy: 0.7656
+epoch: 85, loss_d: 0.0000 accu_d: 1.0000
+epoch: 85, loss_g: 1.1094 loss_g_ae: 0.8938 loss_g_clas: 2.1563 accu_g: 0.7284 accu_g_gdy: 0.7393
+val: loss_g: 8.0593 loss_g_ae: 7.9465 loss_g_clas: 1.1276 loss_d: 3.2536 accu_d: 0.6197 accu_g: 0.8399 accu_g_gdy: 0.8510
+test: loss_g: 6.6281 loss_g_ae: 6.5236 loss_g_clas: 1.0453 loss_d: 2.4769 accu_d: 0.7103 accu_g: 0.8632 accu_g_gdy: 0.8410
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1841 loss_g_ae: 1.0424 loss_g_clas: 1.4168 accu_g: 0.8125 accu_g_gdy: 0.8125
+epoch: 86, loss_d: 0.0000 accu_d: 1.0000
+epoch: 86, loss_g: 2.3784 loss_g_ae: 2.2700 loss_g_clas: 1.0835 accu_g: 0.8549 accu_g_gdy: 0.8737
+val: loss_g: 9.5692 loss_g_ae: 9.4538 loss_g_clas: 1.1540 loss_d: 3.2565 accu_d: 0.6212 accu_g: 0.8590 accu_g_gdy: 0.8384
+test: loss_g: 7.9404 loss_g_ae: 7.8505 loss_g_clas: 0.8984 loss_d: 2.4828 accu_d: 0.7089 accu_g: 0.8880 accu_g_gdy: 0.8820
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.3300 loss_g_ae: 2.2642 loss_g_clas: 0.6583 accu_g: 0.9062 accu_g_gdy: 0.9375
+epoch: 87, loss_d: 0.0000 accu_d: 1.0000
+epoch: 87, loss_g: 1.2100 loss_g_ae: 1.0201 loss_g_clas: 1.8996 accu_g: 0.7712 accu_g_gdy: 0.7665
+val: loss_g: 7.7176 loss_g_ae: 7.5656 loss_g_clas: 1.5201 loss_d: 3.2847 accu_d: 0.6197 accu_g: 0.8035 accu_g_gdy: 0.8051
+test: loss_g: 6.5121 loss_g_ae: 6.3588 loss_g_clas: 1.5331 loss_d: 2.4974 accu_d: 0.7096 accu_g: 0.8182 accu_g_gdy: 0.8082
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1396 loss_g_ae: 0.9402 loss_g_clas: 1.9938 accu_g: 0.7969 accu_g_gdy: 0.7812
+epoch: 88, loss_d: 0.0000 accu_d: 1.0000
+epoch: 88, loss_g: 0.9693 loss_g_ae: 0.7434 loss_g_clas: 2.2590 accu_g: 0.7234 accu_g_gdy: 0.7160
+val: loss_g: 7.6210 loss_g_ae: 7.4711 loss_g_clas: 1.4993 loss_d: 3.3100 accu_d: 0.6228 accu_g: 0.8082 accu_g_gdy: 0.7924
+test: loss_g: 6.4199 loss_g_ae: 6.2567 loss_g_clas: 1.6318 loss_d: 2.5110 accu_d: 0.7103 accu_g: 0.8068 accu_g_gdy: 0.8055
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.8418 loss_g_ae: 0.5393 loss_g_clas: 3.0251 accu_g: 0.7188 accu_g_gdy: 0.6719
+epoch: 89, loss_d: 0.0000 accu_d: 1.0000
+epoch: 89, loss_g: 1.0629 loss_g_ae: 0.8478 loss_g_clas: 2.1513 accu_g: 0.7310 accu_g_gdy: 0.7377
+val: loss_g: 7.6869 loss_g_ae: 7.5737 loss_g_clas: 1.1326 loss_d: 3.3057 accu_d: 0.6197 accu_g: 0.8399 accu_g_gdy: 0.8130
+test: loss_g: 6.5904 loss_g_ae: 6.4312 loss_g_clas: 1.5924 loss_d: 2.5185 accu_d: 0.7089 accu_g: 0.7954 accu_g_gdy: 0.8135
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.8155 loss_g_ae: 0.5609 loss_g_clas: 2.5465 accu_g: 0.7031 accu_g_gdy: 0.7031
+epoch: 90, loss_d: 0.0000 accu_d: 1.0000
+epoch: 90, loss_g: 1.0839 loss_g_ae: 0.9009 loss_g_clas: 1.8299 accu_g: 0.7550 accu_g_gdy: 0.7545
+val: loss_g: 7.8338 loss_g_ae: 7.6868 loss_g_clas: 1.4694 loss_d: 3.3340 accu_d: 0.6228 accu_g: 0.8225 accu_g_gdy: 0.8257
+test: loss_g: 6.5417 loss_g_ae: 6.4105 loss_g_clas: 1.3117 loss_d: 2.5343 accu_d: 0.7089 accu_g: 0.8156 accu_g_gdy: 0.8203
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0590 loss_g_ae: 0.8169 loss_g_clas: 2.4212 accu_g: 0.7344 accu_g_gdy: 0.6875
+epoch: 91, loss_d: 0.0081 accu_d: 0.9984
+epoch: 91, loss_g: 1.2103 loss_g_ae: 0.9580 loss_g_clas: 2.5234 accu_g: 0.7042 accu_g_gdy: 0.6728
+val: loss_g: 8.3774 loss_g_ae: 8.2009 loss_g_clas: 1.7647 loss_d: 3.8759 accu_d: 0.5990 accu_g: 0.7892 accu_g_gdy: 0.8067
+test: loss_g: 6.9375 loss_g_ae: 6.7620 loss_g_clas: 1.7551 loss_d: 2.8891 accu_d: 0.6995 accu_g: 0.7928 accu_g_gdy: 0.8008
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4583 loss_g_ae: 1.2014 loss_g_clas: 2.5687 accu_g: 0.7344 accu_g_gdy: 0.8125
+epoch: 92, loss_d: 0.0185 accu_d: 0.9922
+epoch: 92, loss_g: 1.5140 loss_g_ae: 1.2327 loss_g_clas: 2.8133 accu_g: 0.6854 accu_g_gdy: 0.6823
+val: loss_g: 8.1271 loss_g_ae: 7.9438 loss_g_clas: 1.8336 loss_d: 3.6184 accu_d: 0.5990 accu_g: 0.7892 accu_g_gdy: 0.7845
+test: loss_g: 6.9599 loss_g_ae: 6.7515 loss_g_clas: 2.0836 loss_d: 2.6755 accu_d: 0.7036 accu_g: 0.7686 accu_g_gdy: 0.7552
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.5207 loss_g_ae: 1.1040 loss_g_clas: 4.1672 accu_g: 0.5938 accu_g_gdy: 0.5469
+epoch: 93, loss_d: 0.0110 accu_d: 0.9953
+epoch: 93, loss_g: 1.3652 loss_g_ae: 1.1545 loss_g_clas: 2.1069 accu_g: 0.7492 accu_g_gdy: 0.7300
+val: loss_g: 8.3374 loss_g_ae: 8.1430 loss_g_clas: 1.9440 loss_d: 3.7209 accu_d: 0.6149 accu_g: 0.7591 accu_g_gdy: 0.7670
+test: loss_g: 7.0285 loss_g_ae: 6.8172 loss_g_clas: 2.1131 loss_d: 2.6800 accu_d: 0.7089 accu_g: 0.7639 accu_g_gdy: 0.7606
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0020 accu_d: 1.0000
+step: 1, loss_g: 1.0137 loss_g_ae: 0.8212 loss_g_clas: 1.9259 accu_g: 0.7188 accu_g_gdy: 0.7500
+epoch: 94, loss_d: 0.0026 accu_d: 0.9984
+epoch: 94, loss_g: 1.9842 loss_g_ae: 1.7710 loss_g_clas: 2.1314 accu_g: 0.7181 accu_g_gdy: 0.7060
+val: loss_g: 9.4064 loss_g_ae: 9.2270 loss_g_clas: 1.7941 loss_d: 3.7145 accu_d: 0.5990 accu_g: 0.7544 accu_g_gdy: 0.7591
+test: loss_g: 7.9061 loss_g_ae: 7.7159 loss_g_clas: 1.9014 loss_d: 2.7473 accu_d: 0.7109 accu_g: 0.7646 accu_g_gdy: 0.7619
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0005 accu_d: 1.0000
+step: 1, loss_g: 1.1332 loss_g_ae: 0.9891 loss_g_clas: 1.4400 accu_g: 0.7656 accu_g_gdy: 0.7969
+epoch: 95, loss_d: 0.0034 accu_d: 0.9984
+epoch: 95, loss_g: 1.3042 loss_g_ae: 1.0568 loss_g_clas: 2.4737 accu_g: 0.7057 accu_g_gdy: 0.6895
+val: loss_g: 8.4246 loss_g_ae: 8.2458 loss_g_clas: 1.7879 loss_d: 3.7213 accu_d: 0.6022 accu_g: 0.7797 accu_g_gdy: 0.7765
+test: loss_g: 7.1504 loss_g_ae: 6.9634 loss_g_clas: 1.8701 loss_d: 2.7294 accu_d: 0.7049 accu_g: 0.7840 accu_g_gdy: 0.7793
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.2395 loss_g_ae: 0.9803 loss_g_clas: 2.5922 accu_g: 0.6875 accu_g_gdy: 0.7031
+epoch: 96, loss_d: 0.0002 accu_d: 1.0000
+epoch: 96, loss_g: 2.6258 loss_g_ae: 2.4777 loss_g_clas: 1.4811 accu_g: 0.8346 accu_g_gdy: 0.8087
+val: loss_g: 10.2244 loss_g_ae: 10.0847 loss_g_clas: 1.3969 loss_d: 3.8538 accu_d: 0.6006 accu_g: 0.8320 accu_g_gdy: 0.8130
+test: loss_g: 8.3662 loss_g_ae: 8.2369 loss_g_clas: 1.2923 loss_d: 2.7486 accu_d: 0.7096 accu_g: 0.8317 accu_g_gdy: 0.8337
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.9674 loss_g_ae: 1.7759 loss_g_clas: 1.9148 accu_g: 0.7656 accu_g_gdy: 0.7500
+epoch: 97, loss_d: 0.0000 accu_d: 1.0000
+epoch: 97, loss_g: 2.2051 loss_g_ae: 1.9788 loss_g_clas: 2.2624 accu_g: 0.7583 accu_g_gdy: 0.7874
+val: loss_g: 10.1244 loss_g_ae: 9.9986 loss_g_clas: 1.2583 loss_d: 3.9337 accu_d: 0.5990 accu_g: 0.8669 accu_g_gdy: 0.8685
+test: loss_g: 8.1456 loss_g_ae: 7.9973 loss_g_clas: 1.4830 loss_d: 2.7813 accu_d: 0.7096 accu_g: 0.8296 accu_g_gdy: 0.8357
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0010 accu_d: 1.0000
+step: 1, loss_g: 2.0470 loss_g_ae: 1.8280 loss_g_clas: 2.1902 accu_g: 0.7812 accu_g_gdy: 0.7812
+epoch: 98, loss_d: 0.0000 accu_d: 1.0000
+epoch: 98, loss_g: 1.3634 loss_g_ae: 1.0686 loss_g_clas: 2.9488 accu_g: 0.7197 accu_g_gdy: 0.6999
+val: loss_g: 8.8817 loss_g_ae: 8.7213 loss_g_clas: 1.6044 loss_d: 3.9262 accu_d: 0.6022 accu_g: 0.8082 accu_g_gdy: 0.7971
+test: loss_g: 7.4739 loss_g_ae: 7.2605 loss_g_clas: 2.1339 loss_d: 2.7872 accu_d: 0.7082 accu_g: 0.7767 accu_g_gdy: 0.7834
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0721 loss_g_ae: 0.7779 loss_g_clas: 2.9417 accu_g: 0.6406 accu_g_gdy: 0.6562
+epoch: 99, loss_d: 0.0000 accu_d: 1.0000
+epoch: 99, loss_g: 1.1080 loss_g_ae: 0.8163 loss_g_clas: 2.9176 accu_g: 0.6865 accu_g_gdy: 0.7103
+val: loss_g: 8.8176 loss_g_ae: 8.6276 loss_g_clas: 1.8999 loss_d: 3.9410 accu_d: 0.6006 accu_g: 0.7861 accu_g_gdy: 0.7971
+test: loss_g: 7.3983 loss_g_ae: 7.1811 loss_g_clas: 2.1723 loss_d: 2.8141 accu_d: 0.7062 accu_g: 0.7733 accu_g_gdy: 0.7746
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2015 loss_g_ae: 0.9620 loss_g_clas: 2.3950 accu_g: 0.7344 accu_g_gdy: 0.7031
+epoch: 100, loss_d: 0.0000 accu_d: 1.0000
+epoch: 100, loss_g: 2.1635 loss_g_ae: 1.8292 loss_g_clas: 3.3430 accu_g: 0.6560 accu_g_gdy: 0.6725
+val: loss_g: 9.2607 loss_g_ae: 9.0485 loss_g_clas: 2.1215 loss_d: 3.9707 accu_d: 0.5990 accu_g: 0.7813 accu_g_gdy: 0.7797
+test: loss_g: 7.8114 loss_g_ae: 7.6012 loss_g_clas: 2.1023 loss_d: 2.8191 accu_d: 0.7069 accu_g: 0.7726 accu_g_gdy: 0.7740
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7174 loss_g_ae: 1.4670 loss_g_clas: 2.5048 accu_g: 0.7344 accu_g_gdy: 0.6562
+epoch: 101, loss_d: 0.0000 accu_d: 1.0000
+epoch: 101, loss_g: 1.1919 loss_g_ae: 0.9204 loss_g_clas: 2.7150 accu_g: 0.7116 accu_g_gdy: 0.7113
+val: loss_g: 8.7153 loss_g_ae: 8.5480 loss_g_clas: 1.6730 loss_d: 3.9850 accu_d: 0.6006 accu_g: 0.7940 accu_g_gdy: 0.7924
+test: loss_g: 7.3222 loss_g_ae: 7.1273 loss_g_clas: 1.9489 loss_d: 2.8210 accu_d: 0.7123 accu_g: 0.7901 accu_g_gdy: 0.7827
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1221 loss_g_ae: 0.6840 loss_g_clas: 4.3807 accu_g: 0.6562 accu_g_gdy: 0.6562
+epoch: 102, loss_d: 0.0000 accu_d: 1.0000
+epoch: 102, loss_g: 1.2398 loss_g_ae: 1.0706 loss_g_clas: 1.6914 accu_g: 0.8076 accu_g_gdy: 0.7505
+val: loss_g: 9.1389 loss_g_ae: 8.9807 loss_g_clas: 1.5824 loss_d: 3.9922 accu_d: 0.6006 accu_g: 0.8035 accu_g_gdy: 0.8114
+test: loss_g: 7.6575 loss_g_ae: 7.4904 loss_g_clas: 1.6706 loss_d: 2.8302 accu_d: 0.7123 accu_g: 0.8149 accu_g_gdy: 0.8015
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9569 loss_g_ae: 0.6828 loss_g_clas: 2.7403 accu_g: 0.7188 accu_g_gdy: 0.7969
+epoch: 103, loss_d: 0.0000 accu_d: 1.0000
+epoch: 103, loss_g: 1.2706 loss_g_ae: 0.9230 loss_g_clas: 3.4760 accu_g: 0.6645 accu_g_gdy: 0.6641
+val: loss_g: 8.7372 loss_g_ae: 8.5675 loss_g_clas: 1.6972 loss_d: 4.0118 accu_d: 0.6038 accu_g: 0.8051 accu_g_gdy: 0.8003
+test: loss_g: 7.3977 loss_g_ae: 7.1892 loss_g_clas: 2.0855 loss_d: 2.8413 accu_d: 0.7109 accu_g: 0.7746 accu_g_gdy: 0.7840
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.1941 loss_g_ae: 0.6888 loss_g_clas: 5.0532 accu_g: 0.6094 accu_g_gdy: 0.6562
+epoch: 104, loss_d: 0.0000 accu_d: 1.0000
+epoch: 104, loss_g: 1.9505 loss_g_ae: 1.6612 loss_g_clas: 2.8932 accu_g: 0.6995 accu_g_gdy: 0.7042
+val: loss_g: 9.0613 loss_g_ae: 8.8494 loss_g_clas: 2.1187 loss_d: 4.0355 accu_d: 0.6038 accu_g: 0.7670 accu_g_gdy: 0.7813
+test: loss_g: 7.7024 loss_g_ae: 7.4679 loss_g_clas: 2.3453 loss_d: 2.8507 accu_d: 0.7089 accu_g: 0.7525 accu_g_gdy: 0.7606
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6763 loss_g_ae: 1.4067 loss_g_clas: 2.6952 accu_g: 0.7656 accu_g_gdy: 0.6250
+epoch: 105, loss_d: 0.0000 accu_d: 1.0000
+epoch: 105, loss_g: 1.3785 loss_g_ae: 0.9855 loss_g_clas: 3.9302 accu_g: 0.6525 accu_g_gdy: 0.6620
+val: loss_g: 8.7679 loss_g_ae: 8.5222 loss_g_clas: 2.4568 loss_d: 4.0435 accu_d: 0.6038 accu_g: 0.7496 accu_g_gdy: 0.7559
+test: loss_g: 7.5152 loss_g_ae: 7.2476 loss_g_clas: 2.6763 loss_d: 2.8589 accu_d: 0.7089 accu_g: 0.7445 accu_g_gdy: 0.7311
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0001 accu_d: 1.0000
+step: 1, loss_g: 1.3610 loss_g_ae: 1.1603 loss_g_clas: 2.0076 accu_g: 0.7500 accu_g_gdy: 0.6562
+epoch: 106, loss_d: 0.0001 accu_d: 1.0000
+epoch: 106, loss_g: 1.3856 loss_g_ae: 1.0570 loss_g_clas: 3.2860 accu_g: 0.6782 accu_g_gdy: 0.6455
+val: loss_g: 8.8237 loss_g_ae: 8.6285 loss_g_clas: 1.9514 loss_d: 4.0685 accu_d: 0.6086 accu_g: 0.7702 accu_g_gdy: 0.7607
+test: loss_g: 7.5524 loss_g_ae: 7.2978 loss_g_clas: 2.5458 loss_d: 2.8836 accu_d: 0.7096 accu_g: 0.7586 accu_g_gdy: 0.7612
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.9913 loss_g_ae: 1.4896 loss_g_clas: 5.0170 accu_g: 0.5781 accu_g_gdy: 0.5625
+epoch: 107, loss_d: 0.0000 accu_d: 1.0000
+epoch: 107, loss_g: 1.7850 loss_g_ae: 1.4274 loss_g_clas: 3.5762 accu_g: 0.6675 accu_g_gdy: 0.6655
+val: loss_g: 9.2001 loss_g_ae: 8.9903 loss_g_clas: 2.0982 loss_d: 4.0226 accu_d: 0.6038 accu_g: 0.7702 accu_g_gdy: 0.7876
+test: loss_g: 7.8395 loss_g_ae: 7.5726 loss_g_clas: 2.6689 loss_d: 2.8712 accu_d: 0.7096 accu_g: 0.7532 accu_g_gdy: 0.7586
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4829 loss_g_ae: 1.1318 loss_g_clas: 3.5105 accu_g: 0.6094 accu_g_gdy: 0.5469
+epoch: 108, loss_d: 0.0000 accu_d: 1.0000
+epoch: 108, loss_g: 1.3700 loss_g_ae: 1.0341 loss_g_clas: 3.3594 accu_g: 0.6478 accu_g_gdy: 0.6870
+val: loss_g: 8.7803 loss_g_ae: 8.5835 loss_g_clas: 1.9674 loss_d: 4.0412 accu_d: 0.6038 accu_g: 0.7956 accu_g_gdy: 0.8098
+test: loss_g: 7.5066 loss_g_ae: 7.2813 loss_g_clas: 2.2528 loss_d: 2.8759 accu_d: 0.7096 accu_g: 0.7686 accu_g_gdy: 0.7646
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3781 loss_g_ae: 0.9053 loss_g_clas: 4.7278 accu_g: 0.5312 accu_g_gdy: 0.5938
+epoch: 109, loss_d: 0.0000 accu_d: 1.0000
+epoch: 109, loss_g: 1.2580 loss_g_ae: 0.9880 loss_g_clas: 2.7000 accu_g: 0.7300 accu_g_gdy: 0.7171
+val: loss_g: 8.5614 loss_g_ae: 8.3934 loss_g_clas: 1.6805 loss_d: 4.0479 accu_d: 0.6054 accu_g: 0.8130 accu_g_gdy: 0.8146
+test: loss_g: 7.3994 loss_g_ae: 7.2027 loss_g_clas: 1.9676 loss_d: 2.8813 accu_d: 0.7103 accu_g: 0.7814 accu_g_gdy: 0.7881
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1641 loss_g_ae: 0.6853 loss_g_clas: 4.7879 accu_g: 0.6094 accu_g_gdy: 0.6250
+epoch: 110, loss_d: 0.0000 accu_d: 1.0000
+epoch: 110, loss_g: 1.1578 loss_g_ae: 0.8359 loss_g_clas: 3.2189 accu_g: 0.6885 accu_g_gdy: 0.6495
+val: loss_g: 8.6124 loss_g_ae: 8.4604 loss_g_clas: 1.5199 loss_d: 4.0604 accu_d: 0.6038 accu_g: 0.8257 accu_g_gdy: 0.8098
+test: loss_g: 7.4185 loss_g_ae: 7.2451 loss_g_clas: 1.7338 loss_d: 2.8786 accu_d: 0.7123 accu_g: 0.8109 accu_g_gdy: 0.7921
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0003 loss_g_ae: 0.6964 loss_g_clas: 3.0393 accu_g: 0.6406 accu_g_gdy: 0.7500
+epoch: 111, loss_d: 0.0000 accu_d: 1.0000
+epoch: 111, loss_g: 1.3173 loss_g_ae: 1.0742 loss_g_clas: 2.4312 accu_g: 0.7498 accu_g_gdy: 0.7659
+val: loss_g: 9.4032 loss_g_ae: 9.2855 loss_g_clas: 1.1771 loss_d: 4.0836 accu_d: 0.6038 accu_g: 0.8384 accu_g_gdy: 0.8558
+test: loss_g: 7.9178 loss_g_ae: 7.8042 loss_g_clas: 1.1363 loss_d: 2.8890 accu_d: 0.7123 accu_g: 0.8504 accu_g_gdy: 0.8592
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.8172 loss_g_ae: 1.4616 loss_g_clas: 3.5561 accu_g: 0.7031 accu_g_gdy: 0.7500
+epoch: 112, loss_d: 0.0000 accu_d: 1.0000
+epoch: 112, loss_g: 1.0861 loss_g_ae: 0.7610 loss_g_clas: 3.2510 accu_g: 0.6803 accu_g_gdy: 0.7073
+val: loss_g: 9.0391 loss_g_ae: 8.8796 loss_g_clas: 1.5952 loss_d: 4.0835 accu_d: 0.6006 accu_g: 0.8241 accu_g_gdy: 0.8225
+test: loss_g: 7.5857 loss_g_ae: 7.4158 loss_g_clas: 1.6985 loss_d: 2.9082 accu_d: 0.7129 accu_g: 0.8149 accu_g_gdy: 0.8048
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1660 loss_g_ae: 0.8814 loss_g_clas: 2.8455 accu_g: 0.7500 accu_g_gdy: 0.7812
+epoch: 113, loss_d: 0.0000 accu_d: 1.0000
+epoch: 113, loss_g: 0.9992 loss_g_ae: 0.7623 loss_g_clas: 2.3693 accu_g: 0.7499 accu_g_gdy: 0.7405
+val: loss_g: 9.2928 loss_g_ae: 9.1408 loss_g_clas: 1.5198 loss_d: 4.0828 accu_d: 0.6006 accu_g: 0.8193 accu_g_gdy: 0.8273
+test: loss_g: 7.7992 loss_g_ae: 7.6608 loss_g_clas: 1.3838 loss_d: 2.9127 accu_d: 0.7123 accu_g: 0.8337 accu_g_gdy: 0.8377
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4018 loss_g_ae: 1.1824 loss_g_clas: 2.1937 accu_g: 0.8125 accu_g_gdy: 0.6719
+epoch: 114, loss_d: 0.0000 accu_d: 1.0000
+epoch: 114, loss_g: 1.7900 loss_g_ae: 1.5052 loss_g_clas: 2.8487 accu_g: 0.7093 accu_g_gdy: 0.7265
+val: loss_g: 10.1479 loss_g_ae: 9.9684 loss_g_clas: 1.7941 loss_d: 4.0890 accu_d: 0.6006 accu_g: 0.7971 accu_g_gdy: 0.7956
+test: loss_g: 8.4895 loss_g_ae: 8.3205 loss_g_clas: 1.6899 loss_d: 2.9160 accu_d: 0.7123 accu_g: 0.8135 accu_g_gdy: 0.8082
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3401 loss_g_ae: 1.0550 loss_g_clas: 2.8510 accu_g: 0.7031 accu_g_gdy: 0.7188
+epoch: 115, loss_d: 0.0000 accu_d: 1.0000
+epoch: 115, loss_g: 1.3813 loss_g_ae: 1.2115 loss_g_clas: 1.6989 accu_g: 0.8236 accu_g_gdy: 0.8060
+val: loss_g: 9.9526 loss_g_ae: 9.8746 loss_g_clas: 0.7801 loss_d: 4.0928 accu_d: 0.6006 accu_g: 0.8938 accu_g_gdy: 0.8954
+test: loss_g: 8.1923 loss_g_ae: 8.1275 loss_g_clas: 0.6479 loss_d: 2.9199 accu_d: 0.7123 accu_g: 0.9148 accu_g_gdy: 0.9108
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0934 loss_g_ae: 0.9658 loss_g_clas: 1.2762 accu_g: 0.7969 accu_g_gdy: 0.9062
+epoch: 116, loss_d: 0.0000 accu_d: 1.0000
+epoch: 116, loss_g: 1.8152 loss_g_ae: 1.6443 loss_g_clas: 1.7089 accu_g: 0.8228 accu_g_gdy: 0.8400
+val: loss_g: 10.5352 loss_g_ae: 10.4552 loss_g_clas: 0.8003 loss_d: 4.0996 accu_d: 0.6022 accu_g: 0.9002 accu_g_gdy: 0.8970
+test: loss_g: 8.9971 loss_g_ae: 8.8972 loss_g_clas: 0.9990 loss_d: 2.9249 accu_d: 0.7123 accu_g: 0.8867 accu_g_gdy: 0.8806
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1636 loss_g_ae: 1.0646 loss_g_clas: 0.9897 accu_g: 0.9062 accu_g_gdy: 0.8906
+epoch: 117, loss_d: 0.0000 accu_d: 1.0000
+epoch: 117, loss_g: 1.1989 loss_g_ae: 0.9770 loss_g_clas: 2.2192 accu_g: 0.7847 accu_g_gdy: 0.7738
+val: loss_g: 9.9328 loss_g_ae: 9.8137 loss_g_clas: 1.1907 loss_d: 4.1037 accu_d: 0.6022 accu_g: 0.8574 accu_g_gdy: 0.8431
+test: loss_g: 8.3931 loss_g_ae: 8.2319 loss_g_clas: 1.6120 loss_d: 2.9308 accu_d: 0.7129 accu_g: 0.8310 accu_g_gdy: 0.8370
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0761 loss_g_ae: 0.9314 loss_g_clas: 1.4464 accu_g: 0.7656 accu_g_gdy: 0.7031
+epoch: 118, loss_d: 0.0000 accu_d: 1.0000
+epoch: 118, loss_g: 1.1270 loss_g_ae: 0.8587 loss_g_clas: 2.6833 accu_g: 0.7300 accu_g_gdy: 0.6932
+val: loss_g: 9.7580 loss_g_ae: 9.5769 loss_g_clas: 1.8109 loss_d: 4.1121 accu_d: 0.6022 accu_g: 0.7876 accu_g_gdy: 0.8082
+test: loss_g: 8.3436 loss_g_ae: 8.1211 loss_g_clas: 2.2259 loss_d: 2.9332 accu_d: 0.7129 accu_g: 0.7827 accu_g_gdy: 0.7820
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1455 loss_g_ae: 0.8032 loss_g_clas: 3.4227 accu_g: 0.6406 accu_g_gdy: 0.6875
+epoch: 119, loss_d: 0.0000 accu_d: 1.0000
+epoch: 119, loss_g: 1.4359 loss_g_ae: 1.1956 loss_g_clas: 2.4030 accu_g: 0.7477 accu_g_gdy: 0.7907
+val: loss_g: 10.3603 loss_g_ae: 10.2225 loss_g_clas: 1.3780 loss_d: 4.1137 accu_d: 0.6022 accu_g: 0.8336 accu_g_gdy: 0.8177
+test: loss_g: 8.7881 loss_g_ae: 8.5981 loss_g_clas: 1.9000 loss_d: 2.9364 accu_d: 0.7143 accu_g: 0.7941 accu_g_gdy: 0.8008
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1703 loss_g_ae: 0.8658 loss_g_clas: 3.0449 accu_g: 0.7500 accu_g_gdy: 0.7031
+epoch: 120, loss_d: 0.0000 accu_d: 1.0000
+epoch: 120, loss_g: 1.2533 loss_g_ae: 0.9776 loss_g_clas: 2.7564 accu_g: 0.7131 accu_g_gdy: 0.7275
+val: loss_g: 10.2518 loss_g_ae: 10.1314 loss_g_clas: 1.2049 loss_d: 4.1114 accu_d: 0.6054 accu_g: 0.8399 accu_g_gdy: 0.8288
+test: loss_g: 8.6889 loss_g_ae: 8.5215 loss_g_clas: 1.6736 loss_d: 2.9393 accu_d: 0.7129 accu_g: 0.8203 accu_g_gdy: 0.8196
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.7978 loss_g_ae: 0.6348 loss_g_clas: 1.6301 accu_g: 0.7812 accu_g_gdy: 0.7344
+epoch: 121, loss_d: 0.0000 accu_d: 1.0000
+epoch: 121, loss_g: 1.1525 loss_g_ae: 0.9853 loss_g_clas: 1.6716 accu_g: 0.7994 accu_g_gdy: 0.7780
+val: loss_g: 10.2634 loss_g_ae: 10.1361 loss_g_clas: 1.2733 loss_d: 4.1100 accu_d: 0.6054 accu_g: 0.8494 accu_g_gdy: 0.8336
+test: loss_g: 8.6678 loss_g_ae: 8.5201 loss_g_clas: 1.4770 loss_d: 2.9490 accu_d: 0.7129 accu_g: 0.8357 accu_g_gdy: 0.8330
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9485 loss_g_ae: 0.8222 loss_g_clas: 1.2633 accu_g: 0.8594 accu_g_gdy: 0.7656
+epoch: 122, loss_d: 0.0000 accu_d: 1.0000
+epoch: 122, loss_g: 1.2353 loss_g_ae: 0.9107 loss_g_clas: 3.2466 accu_g: 0.6891 accu_g_gdy: 0.7077
+val: loss_g: 10.2474 loss_g_ae: 10.0999 loss_g_clas: 1.4751 loss_d: 4.0332 accu_d: 0.6054 accu_g: 0.8415 accu_g_gdy: 0.8399
+test: loss_g: 8.7109 loss_g_ae: 8.5472 loss_g_clas: 1.6375 loss_d: 2.9351 accu_d: 0.7129 accu_g: 0.8236 accu_g_gdy: 0.8203
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3222 loss_g_ae: 0.9275 loss_g_clas: 3.9465 accu_g: 0.5938 accu_g_gdy: 0.7031
+epoch: 123, loss_d: 0.0000 accu_d: 1.0000
+epoch: 123, loss_g: 1.3551 loss_g_ae: 1.1105 loss_g_clas: 2.4459 accu_g: 0.7552 accu_g_gdy: 0.7255
+val: loss_g: 10.3318 loss_g_ae: 10.1906 loss_g_clas: 1.4122 loss_d: 4.0617 accu_d: 0.6038 accu_g: 0.8399 accu_g_gdy: 0.8415
+test: loss_g: 8.8151 loss_g_ae: 8.6240 loss_g_clas: 1.9113 loss_d: 2.9449 accu_d: 0.7136 accu_g: 0.8075 accu_g_gdy: 0.7995
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6003 loss_g_ae: 1.3251 loss_g_clas: 2.7515 accu_g: 0.7031 accu_g_gdy: 0.6875
+epoch: 124, loss_d: 0.0000 accu_d: 1.0000
+epoch: 124, loss_g: 1.2273 loss_g_ae: 1.0413 loss_g_clas: 1.8605 accu_g: 0.8008 accu_g_gdy: 0.8066
+val: loss_g: 10.1350 loss_g_ae: 10.0225 loss_g_clas: 1.1256 loss_d: 4.0564 accu_d: 0.6022 accu_g: 0.8716 accu_g_gdy: 0.8653
+test: loss_g: 8.5396 loss_g_ae: 8.4054 loss_g_clas: 1.3419 loss_d: 2.9478 accu_d: 0.7109 accu_g: 0.8578 accu_g_gdy: 0.8457
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0583 loss_g_ae: 0.8549 loss_g_clas: 2.0337 accu_g: 0.7344 accu_g_gdy: 0.7188
+epoch: 125, loss_d: 0.0000 accu_d: 1.0000
+epoch: 125, loss_g: 0.9951 loss_g_ae: 0.6837 loss_g_clas: 3.1141 accu_g: 0.6839 accu_g_gdy: 0.6704
+val: loss_g: 9.7998 loss_g_ae: 9.6382 loss_g_clas: 1.6166 loss_d: 4.1124 accu_d: 0.6038 accu_g: 0.8225 accu_g_gdy: 0.8051
+test: loss_g: 8.3855 loss_g_ae: 8.1552 loss_g_clas: 2.3025 loss_d: 2.9767 accu_d: 0.7116 accu_g: 0.7827 accu_g_gdy: 0.7740
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 0.9843 loss_g_ae: 0.6596 loss_g_clas: 3.2473 accu_g: 0.6094 accu_g_gdy: 0.6250
+epoch: 126, loss_d: 0.0000 accu_d: 1.0000
+epoch: 126, loss_g: 2.0336 loss_g_ae: 1.7441 loss_g_clas: 2.8949 accu_g: 0.7275 accu_g_gdy: 0.7151
+val: loss_g: 10.7410 loss_g_ae: 10.5970 loss_g_clas: 1.4391 loss_d: 4.1176 accu_d: 0.6022 accu_g: 0.8193 accu_g_gdy: 0.8193
+test: loss_g: 9.0679 loss_g_ae: 8.8631 loss_g_clas: 2.0482 loss_d: 2.9802 accu_d: 0.7116 accu_g: 0.7901 accu_g_gdy: 0.7928
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7998 loss_g_ae: 1.5223 loss_g_clas: 2.7750 accu_g: 0.6719 accu_g_gdy: 0.7031
+epoch: 127, loss_d: 0.0000 accu_d: 1.0000
+epoch: 127, loss_g: 1.4999 loss_g_ae: 1.1867 loss_g_clas: 3.1319 accu_g: 0.7192 accu_g_gdy: 0.7047
+val: loss_g: 10.2498 loss_g_ae: 10.0741 loss_g_clas: 1.7568 loss_d: 4.1251 accu_d: 0.6054 accu_g: 0.7987 accu_g_gdy: 0.8067
+test: loss_g: 8.4995 loss_g_ae: 8.3164 loss_g_clas: 1.8312 loss_d: 2.9852 accu_d: 0.7116 accu_g: 0.8028 accu_g_gdy: 0.8055
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1532 loss_g_ae: 0.8143 loss_g_clas: 3.3895 accu_g: 0.6875 accu_g_gdy: 0.7344
+epoch: 128, loss_d: 0.0000 accu_d: 1.0000
+epoch: 128, loss_g: 1.7106 loss_g_ae: 1.4063 loss_g_clas: 3.0432 accu_g: 0.6964 accu_g_gdy: 0.6918
+val: loss_g: 10.2123 loss_g_ae: 10.0570 loss_g_clas: 1.5528 loss_d: 4.1230 accu_d: 0.6038 accu_g: 0.8177 accu_g_gdy: 0.8067
+test: loss_g: 8.5997 loss_g_ae: 8.4217 loss_g_clas: 1.7799 loss_d: 2.9892 accu_d: 0.7123 accu_g: 0.8001 accu_g_gdy: 0.7907
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2546 loss_g_ae: 0.9447 loss_g_clas: 3.0986 accu_g: 0.6250 accu_g_gdy: 0.6875
+epoch: 129, loss_d: 0.0000 accu_d: 1.0000
+epoch: 129, loss_g: 1.4033 loss_g_ae: 1.0368 loss_g_clas: 3.6655 accu_g: 0.6401 accu_g_gdy: 0.6273
+val: loss_g: 10.0503 loss_g_ae: 9.8433 loss_g_clas: 2.0697 loss_d: 4.1589 accu_d: 0.6022 accu_g: 0.7559 accu_g_gdy: 0.7559
+test: loss_g: 8.4930 loss_g_ae: 8.2119 loss_g_clas: 2.8112 loss_d: 2.9965 accu_d: 0.7103 accu_g: 0.7257 accu_g_gdy: 0.7311
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3005 loss_g_ae: 0.7323 loss_g_clas: 5.6812 accu_g: 0.5625 accu_g_gdy: 0.5781
+epoch: 130, loss_d: 0.0000 accu_d: 1.0000
+epoch: 130, loss_g: 1.6082 loss_g_ae: 1.2761 loss_g_clas: 3.3203 accu_g: 0.7004 accu_g_gdy: 0.6937
+val: loss_g: 10.4056 loss_g_ae: 10.2254 loss_g_clas: 1.8022 loss_d: 4.1787 accu_d: 0.6038 accu_g: 0.7987 accu_g_gdy: 0.7876
+test: loss_g: 8.9144 loss_g_ae: 8.6581 loss_g_clas: 2.5628 loss_d: 3.0063 accu_d: 0.7109 accu_g: 0.7465 accu_g_gdy: 0.7539
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7290 loss_g_ae: 1.4600 loss_g_clas: 2.6901 accu_g: 0.6875 accu_g_gdy: 0.6719
+epoch: 131, loss_d: 0.0000 accu_d: 1.0000
+epoch: 131, loss_g: 1.1974 loss_g_ae: 0.8992 loss_g_clas: 2.9823 accu_g: 0.7067 accu_g_gdy: 0.7000
+val: loss_g: 9.8632 loss_g_ae: 9.6740 loss_g_clas: 1.8917 loss_d: 4.1736 accu_d: 0.6038 accu_g: 0.8019 accu_g_gdy: 0.7956
+test: loss_g: 8.3302 loss_g_ae: 8.1179 loss_g_clas: 2.1227 loss_d: 3.0094 accu_d: 0.7109 accu_g: 0.7686 accu_g_gdy: 0.7632
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1123 loss_g_ae: 0.9210 loss_g_clas: 1.9124 accu_g: 0.7500 accu_g_gdy: 0.6719
+epoch: 132, loss_d: 0.0000 accu_d: 1.0000
+epoch: 132, loss_g: 2.4062 loss_g_ae: 2.0938 loss_g_clas: 3.1237 accu_g: 0.7201 accu_g_gdy: 0.7036
+val: loss_g: 10.7395 loss_g_ae: 10.4991 loss_g_clas: 2.4041 loss_d: 4.1792 accu_d: 0.6038 accu_g: 0.7670 accu_g_gdy: 0.7559
+test: loss_g: 8.9094 loss_g_ae: 8.6666 loss_g_clas: 2.4278 loss_d: 3.0161 accu_d: 0.7116 accu_g: 0.7706 accu_g_gdy: 0.7713
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.0902 loss_g_ae: 1.8087 loss_g_clas: 2.8150 accu_g: 0.7500 accu_g_gdy: 0.6875
+epoch: 133, loss_d: 0.0000 accu_d: 1.0000
+epoch: 133, loss_g: 1.8188 loss_g_ae: 1.5566 loss_g_clas: 2.6217 accu_g: 0.7472 accu_g_gdy: 0.7534
+val: loss_g: 10.6104 loss_g_ae: 10.4305 loss_g_clas: 1.7992 loss_d: 4.1858 accu_d: 0.6022 accu_g: 0.8082 accu_g_gdy: 0.8035
+test: loss_g: 8.8354 loss_g_ae: 8.6565 loss_g_clas: 1.7892 loss_d: 3.0148 accu_d: 0.7129 accu_g: 0.8015 accu_g_gdy: 0.8042
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2602 loss_g_ae: 1.0678 loss_g_clas: 1.9238 accu_g: 0.7812 accu_g_gdy: 0.7031
+epoch: 134, loss_d: 0.0000 accu_d: 1.0000
+epoch: 134, loss_g: 1.4877 loss_g_ae: 1.0822 loss_g_clas: 4.0552 accu_g: 0.6340 accu_g_gdy: 0.6339
+val: loss_g: 10.1331 loss_g_ae: 9.9024 loss_g_clas: 2.3066 loss_d: 4.1850 accu_d: 0.6006 accu_g: 0.7575 accu_g_gdy: 0.7686
+test: loss_g: 8.6294 loss_g_ae: 8.3482 loss_g_clas: 2.8123 loss_d: 3.0159 accu_d: 0.7116 accu_g: 0.7438 accu_g_gdy: 0.7404
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4755 loss_g_ae: 1.1918 loss_g_clas: 2.8365 accu_g: 0.7969 accu_g_gdy: 0.7188
+epoch: 135, loss_d: 0.0000 accu_d: 1.0000
+epoch: 135, loss_g: 2.0792 loss_g_ae: 1.8767 loss_g_clas: 2.0253 accu_g: 0.8028 accu_g_gdy: 0.8216
+val: loss_g: 10.8136 loss_g_ae: 10.6317 loss_g_clas: 1.8191 loss_d: 4.1893 accu_d: 0.5990 accu_g: 0.7924 accu_g_gdy: 0.8146
+test: loss_g: 9.0477 loss_g_ae: 8.8726 loss_g_clas: 1.7515 loss_d: 3.0187 accu_d: 0.7123 accu_g: 0.8122 accu_g_gdy: 0.8075
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.9794 loss_g_ae: 1.6604 loss_g_clas: 3.1900 accu_g: 0.7031 accu_g_gdy: 0.8125
+epoch: 136, loss_d: 0.0000 accu_d: 1.0000
+epoch: 136, loss_g: 4.4662 loss_g_ae: 4.2545 loss_g_clas: 2.1172 accu_g: 0.7894 accu_g_gdy: 0.7452
+val: loss_g: 12.0029 loss_g_ae: 11.8250 loss_g_clas: 1.7791 loss_d: 4.1980 accu_d: 0.6038 accu_g: 0.7876 accu_g_gdy: 0.7876
+test: loss_g: 9.8942 loss_g_ae: 9.7120 loss_g_clas: 1.8224 loss_d: 3.0262 accu_d: 0.7129 accu_g: 0.8169 accu_g_gdy: 0.8223
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.2278 loss_g_ae: 3.0195 loss_g_clas: 2.0828 accu_g: 0.7656 accu_g_gdy: 0.8125
+epoch: 137, loss_d: 0.0000 accu_d: 1.0000
+epoch: 137, loss_g: 2.9055 loss_g_ae: 2.6671 loss_g_clas: 2.3842 accu_g: 0.7300 accu_g_gdy: 0.7290
+val: loss_g: 11.2396 loss_g_ae: 10.9833 loss_g_clas: 2.5631 loss_d: 4.2037 accu_d: 0.6006 accu_g: 0.7369 accu_g_gdy: 0.7464
+test: loss_g: 9.5120 loss_g_ae: 9.3070 loss_g_clas: 2.0492 loss_d: 3.0361 accu_d: 0.7116 accu_g: 0.7807 accu_g_gdy: 0.7867
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.4899 loss_g_ae: 2.2482 loss_g_clas: 2.4170 accu_g: 0.7969 accu_g_gdy: 0.7344
+epoch: 138, loss_d: 0.0000 accu_d: 1.0000
+epoch: 138, loss_g: 1.8240 loss_g_ae: 1.5074 loss_g_clas: 3.1659 accu_g: 0.6907 accu_g_gdy: 0.6877
+val: loss_g: 10.3890 loss_g_ae: 10.1648 loss_g_clas: 2.2423 loss_d: 4.2014 accu_d: 0.5975 accu_g: 0.7765 accu_g_gdy: 0.7718
+test: loss_g: 8.9556 loss_g_ae: 8.7120 loss_g_clas: 2.4367 loss_d: 3.0394 accu_d: 0.7089 accu_g: 0.7733 accu_g_gdy: 0.7579
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4789 loss_g_ae: 1.1492 loss_g_clas: 3.2974 accu_g: 0.7344 accu_g_gdy: 0.7031
+epoch: 139, loss_d: 0.0000 accu_d: 1.0000
+epoch: 139, loss_g: 1.8478 loss_g_ae: 1.4776 loss_g_clas: 3.7021 accu_g: 0.6505 accu_g_gdy: 0.6417
+val: loss_g: 11.0795 loss_g_ae: 10.8392 loss_g_clas: 2.4028 loss_d: 4.2166 accu_d: 0.5975 accu_g: 0.7512 accu_g_gdy: 0.7528
+test: loss_g: 9.3107 loss_g_ae: 9.0533 loss_g_clas: 2.5741 loss_d: 3.0486 accu_d: 0.7103 accu_g: 0.7505 accu_g_gdy: 0.7518
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.4419 loss_g_ae: 3.1240 loss_g_clas: 3.1784 accu_g: 0.6875 accu_g_gdy: 0.6719
+epoch: 140, loss_d: 0.0000 accu_d: 1.0000
+epoch: 140, loss_g: 2.4629 loss_g_ae: 2.1527 loss_g_clas: 3.1016 accu_g: 0.7079 accu_g_gdy: 0.7111
+val: loss_g: 11.3642 loss_g_ae: 11.1608 loss_g_clas: 2.0331 loss_d: 4.2225 accu_d: 0.5975 accu_g: 0.7702 accu_g_gdy: 0.7734
+test: loss_g: 9.7535 loss_g_ae: 9.5145 loss_g_clas: 2.3901 loss_d: 3.0613 accu_d: 0.7103 accu_g: 0.7726 accu_g_gdy: 0.7639
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 3.3515 loss_g_ae: 3.0929 loss_g_clas: 2.5855 accu_g: 0.7344 accu_g_gdy: 0.7344
+epoch: 141, loss_d: 0.0000 accu_d: 1.0000
+epoch: 141, loss_g: 1.6484 loss_g_ae: 1.3752 loss_g_clas: 2.7322 accu_g: 0.7076 accu_g_gdy: 0.6967
+val: loss_g: 10.3877 loss_g_ae: 10.1880 loss_g_clas: 1.9970 loss_d: 4.2342 accu_d: 0.5975 accu_g: 0.7829 accu_g_gdy: 0.7876
+test: loss_g: 8.7305 loss_g_ae: 8.5246 loss_g_clas: 2.0591 loss_d: 3.0676 accu_d: 0.7136 accu_g: 0.7881 accu_g_gdy: 0.7941
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3660 loss_g_ae: 1.0291 loss_g_clas: 3.3687 accu_g: 0.6250 accu_g_gdy: 0.6250
+epoch: 142, loss_d: 0.0000 accu_d: 1.0000
+epoch: 142, loss_g: 1.7977 loss_g_ae: 1.5186 loss_g_clas: 2.7916 accu_g: 0.7032 accu_g_gdy: 0.7026
+val: loss_g: 10.6756 loss_g_ae: 10.4884 loss_g_clas: 1.8724 loss_d: 4.2297 accu_d: 0.5959 accu_g: 0.7876 accu_g_gdy: 0.7876
+test: loss_g: 8.9108 loss_g_ae: 8.7193 loss_g_clas: 1.9153 loss_d: 3.0718 accu_d: 0.7123 accu_g: 0.7941 accu_g_gdy: 0.7907
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.4097 loss_g_ae: 1.0752 loss_g_clas: 3.3455 accu_g: 0.7188 accu_g_gdy: 0.7031
+epoch: 143, loss_d: 0.0000 accu_d: 1.0000
+epoch: 143, loss_g: 1.9628 loss_g_ae: 1.7651 loss_g_clas: 1.9766 accu_g: 0.7852 accu_g_gdy: 0.8137
+val: loss_g: 11.2607 loss_g_ae: 11.1413 loss_g_clas: 1.1942 loss_d: 4.2295 accu_d: 0.5975 accu_g: 0.8494 accu_g_gdy: 0.8542
+test: loss_g: 9.5209 loss_g_ae: 9.4061 loss_g_clas: 1.1477 loss_d: 3.0699 accu_d: 0.7136 accu_g: 0.8612 accu_g_gdy: 0.8531
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6009 loss_g_ae: 1.4224 loss_g_clas: 1.7850 accu_g: 0.7812 accu_g_gdy: 0.7031
+epoch: 144, loss_d: 0.0000 accu_d: 1.0000
+epoch: 144, loss_g: 1.3081 loss_g_ae: 1.0817 loss_g_clas: 2.2643 accu_g: 0.7660 accu_g_gdy: 0.7754
+val: loss_g: 10.6342 loss_g_ae: 10.4653 loss_g_clas: 1.6897 loss_d: 4.2511 accu_d: 0.5990 accu_g: 0.8003 accu_g_gdy: 0.8098
+test: loss_g: 8.9417 loss_g_ae: 8.7946 loss_g_clas: 1.4711 loss_d: 3.0795 accu_d: 0.7129 accu_g: 0.8343 accu_g_gdy: 0.8317
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2416 loss_g_ae: 1.0086 loss_g_clas: 2.3306 accu_g: 0.6875 accu_g_gdy: 0.6719
+epoch: 145, loss_d: 0.0000 accu_d: 1.0000
+epoch: 145, loss_g: 1.3560 loss_g_ae: 1.0868 loss_g_clas: 2.6920 accu_g: 0.7410 accu_g_gdy: 0.6884
+val: loss_g: 10.4988 loss_g_ae: 10.2856 loss_g_clas: 2.1319 loss_d: 4.2611 accu_d: 0.5990 accu_g: 0.7781 accu_g_gdy: 0.7702
+test: loss_g: 8.7958 loss_g_ae: 8.5742 loss_g_clas: 2.2156 loss_d: 3.0841 accu_d: 0.7143 accu_g: 0.7807 accu_g_gdy: 0.7773
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0529 loss_g_ae: 0.7962 loss_g_clas: 2.5664 accu_g: 0.7031 accu_g_gdy: 0.6562
+epoch: 146, loss_d: 0.0000 accu_d: 1.0000
+epoch: 146, loss_g: 1.7623 loss_g_ae: 1.4943 loss_g_clas: 2.6802 accu_g: 0.7145 accu_g_gdy: 0.7524
+val: loss_g: 10.3929 loss_g_ae: 10.2135 loss_g_clas: 1.7935 loss_d: 4.2818 accu_d: 0.5990 accu_g: 0.8035 accu_g_gdy: 0.8162
+test: loss_g: 8.6964 loss_g_ae: 8.5008 loss_g_clas: 1.9558 loss_d: 3.1056 accu_d: 0.7163 accu_g: 0.7981 accu_g_gdy: 0.7901
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.3696 loss_g_ae: 1.1586 loss_g_clas: 2.1100 accu_g: 0.7031 accu_g_gdy: 0.7812
+epoch: 147, loss_d: 0.0000 accu_d: 1.0000
+epoch: 147, loss_g: 2.1588 loss_g_ae: 1.9592 loss_g_clas: 1.9965 accu_g: 0.7806 accu_g_gdy: 0.7749
+val: loss_g: 11.5112 loss_g_ae: 11.3359 loss_g_clas: 1.7531 loss_d: 4.2817 accu_d: 0.5990 accu_g: 0.8035 accu_g_gdy: 0.8162
+test: loss_g: 9.6137 loss_g_ae: 9.4142 loss_g_clas: 1.9957 loss_d: 3.1111 accu_d: 0.7176 accu_g: 0.8062 accu_g_gdy: 0.7961
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.5515 loss_g_ae: 1.4174 loss_g_clas: 1.3415 accu_g: 0.8125 accu_g_gdy: 0.6562
+epoch: 148, loss_d: 0.0000 accu_d: 1.0000
+epoch: 148, loss_g: 2.1631 loss_g_ae: 1.9934 loss_g_clas: 1.6966 accu_g: 0.8038 accu_g_gdy: 0.8077
+val: loss_g: 12.6589 loss_g_ae: 12.5508 loss_g_clas: 1.0803 loss_d: 4.2692 accu_d: 0.6022 accu_g: 0.8685 accu_g_gdy: 0.8827
+test: loss_g: 10.4339 loss_g_ae: 10.3346 loss_g_clas: 0.9934 loss_d: 3.1146 accu_d: 0.7143 accu_g: 0.8719 accu_g_gdy: 0.8732
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.8480 loss_g_ae: 1.6026 loss_g_clas: 2.4536 accu_g: 0.7812 accu_g_gdy: 0.8594
+epoch: 149, loss_d: 0.0000 accu_d: 1.0000
+epoch: 149, loss_g: 2.2375 loss_g_ae: 2.0785 loss_g_clas: 1.5898 accu_g: 0.8539 accu_g_gdy: 0.8310
+val: loss_g: 11.9575 loss_g_ae: 11.8544 loss_g_clas: 1.0301 loss_d: 4.2680 accu_d: 0.6022 accu_g: 0.8875 accu_g_gdy: 0.8748
+test: loss_g: 9.7310 loss_g_ae: 9.6469 loss_g_clas: 0.8411 loss_d: 3.1171 accu_d: 0.7156 accu_g: 0.8981 accu_g_gdy: 0.8907
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 2.0743 loss_g_ae: 1.8626 loss_g_clas: 2.1177 accu_g: 0.7656 accu_g_gdy: 0.8594
+epoch: 150, loss_d: 0.0000 accu_d: 1.0000
+epoch: 150, loss_g: 1.6486 loss_g_ae: 1.4888 loss_g_clas: 1.5978 accu_g: 0.8190 accu_g_gdy: 0.8149
+val: loss_g: 11.4313 loss_g_ae: 11.3432 loss_g_clas: 0.8804 loss_d: 4.2788 accu_d: 0.6022 accu_g: 0.8796 accu_g_gdy: 0.8843
+test: loss_g: 9.3800 loss_g_ae: 9.2802 loss_g_clas: 0.9977 loss_d: 3.1227 accu_d: 0.7170 accu_g: 0.8753 accu_g_gdy: 0.8779
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.5824 loss_g_ae: 1.4894 loss_g_clas: 0.9298 accu_g: 0.9062 accu_g_gdy: 0.8281
+epoch: 151, loss_d: 0.0000 accu_d: 1.0000
+epoch: 151, loss_g: 1.4964 loss_g_ae: 1.2649 loss_g_clas: 2.3145 accu_g: 0.7519 accu_g_gdy: 0.7410
+val: loss_g: 11.9023 loss_g_ae: 11.7864 loss_g_clas: 1.1586 loss_d: 4.2921 accu_d: 0.6022 accu_g: 0.8700 accu_g_gdy: 0.8558
+test: loss_g: 9.9472 loss_g_ae: 9.7900 loss_g_clas: 1.5720 loss_d: 3.1279 accu_d: 0.7156 accu_g: 0.8296 accu_g_gdy: 0.8377
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7464 loss_g_ae: 1.4570 loss_g_clas: 2.8940 accu_g: 0.7969 accu_g_gdy: 0.8438
+epoch: 152, loss_d: 0.0000 accu_d: 1.0000
+epoch: 152, loss_g: 1.9128 loss_g_ae: 1.7469 loss_g_clas: 1.6587 accu_g: 0.8097 accu_g_gdy: 0.8139
+val: loss_g: 11.7408 loss_g_ae: 11.6499 loss_g_clas: 0.9091 loss_d: 4.3024 accu_d: 0.6006 accu_g: 0.8732 accu_g_gdy: 0.8748
+test: loss_g: 9.6441 loss_g_ae: 9.5234 loss_g_clas: 1.2070 loss_d: 3.1383 accu_d: 0.7143 accu_g: 0.8538 accu_g_gdy: 0.8531
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.5234 loss_g_ae: 1.3555 loss_g_clas: 1.6789 accu_g: 0.7969 accu_g_gdy: 0.7188
+epoch: 153, loss_d: 0.0000 accu_d: 1.0000
+epoch: 153, loss_g: 1.6610 loss_g_ae: 1.4815 loss_g_clas: 1.7949 accu_g: 0.7917 accu_g_gdy: 0.8363
+val: loss_g: 11.5982 loss_g_ae: 11.4998 loss_g_clas: 0.9846 loss_d: 4.2966 accu_d: 0.6006 accu_g: 0.8827 accu_g_gdy: 0.8700
+test: loss_g: 9.2180 loss_g_ae: 9.1192 loss_g_clas: 0.9879 loss_d: 3.1427 accu_d: 0.7123 accu_g: 0.8779 accu_g_gdy: 0.8873
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6268 loss_g_ae: 1.3571 loss_g_clas: 2.6972 accu_g: 0.7656 accu_g_gdy: 0.8125
+epoch: 154, loss_d: 0.0000 accu_d: 1.0000
+epoch: 154, loss_g: 1.3694 loss_g_ae: 1.1505 loss_g_clas: 2.1883 accu_g: 0.7661 accu_g_gdy: 0.8050
+val: loss_g: 11.2563 loss_g_ae: 11.1503 loss_g_clas: 1.0595 loss_d: 4.3044 accu_d: 0.6006 accu_g: 0.8605 accu_g_gdy: 0.8700
+test: loss_g: 9.0801 loss_g_ae: 8.9520 loss_g_clas: 1.2815 loss_d: 3.1456 accu_d: 0.7123 accu_g: 0.8524 accu_g_gdy: 0.8518
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0935 loss_g_ae: 0.9358 loss_g_clas: 1.5774 accu_g: 0.7656 accu_g_gdy: 0.7812
+epoch: 155, loss_d: 0.0000 accu_d: 1.0000
+epoch: 155, loss_g: 1.2875 loss_g_ae: 1.0497 loss_g_clas: 2.3782 accu_g: 0.7563 accu_g_gdy: 0.7409
+val: loss_g: 11.0475 loss_g_ae: 10.9119 loss_g_clas: 1.3563 loss_d: 4.3165 accu_d: 0.6022 accu_g: 0.8479 accu_g_gdy: 0.8479
+test: loss_g: 8.9977 loss_g_ae: 8.8618 loss_g_clas: 1.3589 loss_d: 3.1513 accu_d: 0.7116 accu_g: 0.8464 accu_g_gdy: 0.8504
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.2998 loss_g_ae: 1.1556 loss_g_clas: 1.4423 accu_g: 0.7812 accu_g_gdy: 0.7969
+epoch: 156, loss_d: 0.0000 accu_d: 1.0000
+epoch: 156, loss_g: 1.3236 loss_g_ae: 1.0929 loss_g_clas: 2.3067 accu_g: 0.7775 accu_g_gdy: 0.7583
+val: loss_g: 11.0151 loss_g_ae: 10.8778 loss_g_clas: 1.3735 loss_d: 4.3284 accu_d: 0.6038 accu_g: 0.8526 accu_g_gdy: 0.8526
+test: loss_g: 9.0150 loss_g_ae: 8.8847 loss_g_clas: 1.3030 loss_d: 3.1578 accu_d: 0.7123 accu_g: 0.8598 accu_g_gdy: 0.8531
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0156 loss_g_ae: 0.7930 loss_g_clas: 2.2263 accu_g: 0.8125 accu_g_gdy: 0.7812
+epoch: 157, loss_d: 0.0000 accu_d: 1.0000
+epoch: 157, loss_g: 1.1302 loss_g_ae: 0.8651 loss_g_clas: 2.6506 accu_g: 0.7334 accu_g_gdy: 0.6882
+val: loss_g: 10.7544 loss_g_ae: 10.6224 loss_g_clas: 1.3193 loss_d: 4.3256 accu_d: 0.6038 accu_g: 0.8558 accu_g_gdy: 0.8336
+test: loss_g: 8.8538 loss_g_ae: 8.7213 loss_g_clas: 1.3245 loss_d: 3.1604 accu_d: 0.7129 accu_g: 0.8364 accu_g_gdy: 0.8236
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.1459 loss_g_ae: 0.9587 loss_g_clas: 1.8720 accu_g: 0.7656 accu_g_gdy: 0.7188
+epoch: 158, loss_d: 0.0000 accu_d: 1.0000
+epoch: 158, loss_g: 1.5739 loss_g_ae: 1.3641 loss_g_clas: 2.0979 accu_g: 0.7675 accu_g_gdy: 0.7671
+val: loss_g: 11.4990 loss_g_ae: 11.3780 loss_g_clas: 1.2098 loss_d: 4.3445 accu_d: 0.6038 accu_g: 0.8494 accu_g_gdy: 0.8542
+test: loss_g: 9.3751 loss_g_ae: 9.2512 loss_g_clas: 1.2387 loss_d: 3.1670 accu_d: 0.7136 accu_g: 0.8665 accu_g_gdy: 0.8531
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6039 loss_g_ae: 1.3565 loss_g_clas: 2.4744 accu_g: 0.7656 accu_g_gdy: 0.7500
+epoch: 159, loss_d: 0.0000 accu_d: 1.0000
+epoch: 159, loss_g: 1.3935 loss_g_ae: 1.1882 loss_g_clas: 2.0522 accu_g: 0.7960 accu_g_gdy: 0.8096
+val: loss_g: 12.1082 loss_g_ae: 11.9931 loss_g_clas: 1.1517 loss_d: 4.3217 accu_d: 0.5990 accu_g: 0.8716 accu_g_gdy: 0.8716
+test: loss_g: 9.6132 loss_g_ae: 9.5235 loss_g_clas: 0.8970 loss_d: 3.1479 accu_d: 0.7150 accu_g: 0.8927 accu_g_gdy: 0.8873
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.6408 loss_g_ae: 1.3591 loss_g_clas: 2.8167 accu_g: 0.7969 accu_g_gdy: 0.8281
+epoch: 160, loss_d: 0.0000 accu_d: 1.0000
+epoch: 160, loss_g: 1.2807 loss_g_ae: 1.0201 loss_g_clas: 2.6055 accu_g: 0.7212 accu_g_gdy: 0.7295
+val: loss_g: 11.0249 loss_g_ae: 10.8723 loss_g_clas: 1.5262 loss_d: 4.3377 accu_d: 0.5990 accu_g: 0.8447 accu_g_gdy: 0.8431
+test: loss_g: 8.9944 loss_g_ae: 8.8329 loss_g_clas: 1.6147 loss_d: 3.1638 accu_d: 0.7136 accu_g: 0.8249 accu_g_gdy: 0.8249
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0048 loss_g_ae: 0.7983 loss_g_clas: 2.0658 accu_g: 0.7188 accu_g_gdy: 0.6250
+epoch: 161, loss_d: 0.0000 accu_d: 1.0000
+epoch: 161, loss_g: 1.1843 loss_g_ae: 0.8994 loss_g_clas: 2.8489 accu_g: 0.7325 accu_g_gdy: 0.7464
+val: loss_g: 10.9325 loss_g_ae: 10.7866 loss_g_clas: 1.4587 loss_d: 4.3474 accu_d: 0.5975 accu_g: 0.8304 accu_g_gdy: 0.8288
+test: loss_g: 8.8270 loss_g_ae: 8.6860 loss_g_clas: 1.4102 loss_d: 3.1718 accu_d: 0.7143 accu_g: 0.8431 accu_g_gdy: 0.8397
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.0026 loss_g_ae: 0.6845 loss_g_clas: 3.1806 accu_g: 0.7031 accu_g_gdy: 0.7812
+epoch: 162, loss_d: 0.0000 accu_d: 1.0000
+epoch: 162, loss_g: 2.5550 loss_g_ae: 2.4353 loss_g_clas: 1.1974 accu_g: 0.8741 accu_g_gdy: 0.8726
+val: loss_g: 14.4114 loss_g_ae: 14.3354 loss_g_clas: 0.7594 loss_d: 4.3499 accu_d: 0.5959 accu_g: 0.9049 accu_g_gdy: 0.9128
+test: loss_g: 11.2415 loss_g_ae: 11.1807 loss_g_clas: 0.6078 loss_d: 3.1764 accu_d: 0.7143 accu_g: 0.9175 accu_g_gdy: 0.9262
+gamma: 0.001, lambda_g: 0.1
+step: 1, loss_d: 0.0000 accu_d: 1.0000
+step: 1, loss_g: 1.7382 loss_g_ae: 1.6581 loss_g_clas: 0.8010 accu_g: 0.9062 accu_g_gdy: 0.8438
+epoch: 163, loss_d: 0.0000 accu_d: 1.0000
+epoch: 163, loss_g: 1.3762 loss_g_ae: 1.1399 loss_g_clas: 2.3633 accu_g: 0.7643 accu_g_gdy: 0.7482
+val: loss_g: 12.2392 loss_g_ae: 12.1029 loss_g_clas: 1.3633 loss_d: 4.3622 accu_d: 0.5959 accu_g: 0.8463 accu_g_gdy: 0.8399
+2019-12-05 23:22:05.604981: W tensorflow/core/framework/op_kernel.cc:1502] OP_REQUIRES failed at save_restore_v2_ops.cc:134 : Unknown: Failed to WriteFile: ./checkpoints\ckpt-163.data-00000-of-00001.tempstate8607293283582484584 : There is not enough space on the disk.

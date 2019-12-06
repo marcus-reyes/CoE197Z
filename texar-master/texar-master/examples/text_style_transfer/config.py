@@ -6,8 +6,8 @@
 import copy
 
 # Total number of training epochs (including pre-train and full-train)
-max_nepochs = 50
-pretrain_nepochs = 35  # Number of pre-train epochs (training as autoencoder)
+max_nepochs = 300
+pretrain_nepochs = 220  # Number of pre-train epochs (training as autoencoder)
 display = 500  # Display the training results every N training steps.
 # Display the dev results every N training steps (set to a
 # very large value to disable it).

@@ -1,0 +1,414 @@
+(coe197z) PS C:\Users\Marcus\197_proj1\texar-master\texar-master\examples\text_style_transfer> python main.py --config config
+2019-12-04 08:02:41.013199: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library nvcuda.dll
+2019-12-04 08:02:41.972531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties:
+name: GeForce GTX 1060 major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:01:00.0
+2019-12-04 08:02:41.979889: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2019-12-04 08:02:41.988476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-12-04 08:02:41.992897: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2019-12-04 08:02:42.001259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties:
+name: GeForce GTX 1060 major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:01:00.0
+2019-12-04 08:02:42.006965: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2019-12-04 08:02:42.015294: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-12-04 08:02:42.528502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-04 08:02:42.532969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0
+2019-12-04 08:02:42.535261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N
+2019-12-04 08:02:42.538937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4712 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1)
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.6908 accu_d: 0.6094
+step: 1, loss_g: 9.1469 loss_g_ae: 9.1469 loss_g_clas: 0.6943 accu_g: 0.3906 accu_g_gdy: 0.4375
+step: 500, loss_d: 0.0864 accu_d: 0.9719
+step: 500, loss_g: 3.8979 loss_g_ae: 3.8979 loss_g_clas: 0.4423 accu_g: 0.8266 accu_g_gdy: 0.6906
+step: 1000, loss_d: 0.1312 accu_d: 0.9531
+step: 1000, loss_g: 1.5946 loss_g_ae: 1.5946 loss_g_clas: 1.8880 accu_g: 0.4656 accu_g_gdy: 0.4344
+step: 1500, loss_d: 0.0763 accu_d: 0.9750
+step: 1500, loss_g: 1.2670 loss_g_ae: 1.2670 loss_g_clas: 3.0150 accu_g: 0.2984 accu_g_gdy: 0.3016
+step: 2000, loss_d: 0.0976 accu_d: 0.9688
+step: 2000, loss_g: 0.6641 loss_g_ae: 0.6641 loss_g_clas: 3.8649 accu_g: 0.2250 accu_g_gdy: 0.2141
+step: 2500, loss_d: 0.0851 accu_d: 0.9688
+step: 2500, loss_g: 0.5666 loss_g_ae: 0.5666 loss_g_clas: 4.2584 accu_g: 0.1812 accu_g_gdy: 0.1797
+step: 3000, loss_d: 0.1069 accu_d: 0.9609
+step: 3000, loss_g: 0.4867 loss_g_ae: 0.4867 loss_g_clas: 4.6126 accu_g: 0.1719 accu_g_gdy: 0.1734
+step: 3500, loss_d: 0.0806 accu_d: 0.9750
+step: 3500, loss_g: 0.4148 loss_g_ae: 0.4148 loss_g_clas: 4.9126 accu_g: 0.1234 accu_g_gdy: 0.1422
+step: 4000, loss_d: 0.1161 accu_d: 0.9609
+step: 4000, loss_g: 0.3926 loss_g_ae: 0.3926 loss_g_clas: 5.1230 accu_g: 0.1219 accu_g_gdy: 0.1187
+step: 4500, loss_d: 0.0834 accu_d: 0.9641
+step: 4500, loss_g: 0.3614 loss_g_ae: 0.3614 loss_g_clas: 5.1218 accu_g: 0.1078 accu_g_gdy: 0.0938
+step: 5000, loss_d: 0.0734 accu_d: 0.9750
+step: 5000, loss_g: 0.2905 loss_g_ae: 0.2905 loss_g_clas: 5.4000 accu_g: 0.1000 accu_g_gdy: 0.1141
+step: 5500, loss_d: 0.1041 accu_d: 0.9641
+step: 5500, loss_g: 0.2622 loss_g_ae: 0.2622 loss_g_clas: 5.7435 accu_g: 0.1187 accu_g_gdy: 0.1125
+step: 6000, loss_d: 0.0641 accu_d: 0.9766
+step: 6000, loss_g: 0.2643 loss_g_ae: 0.2643 loss_g_clas: 5.4885 accu_g: 0.1219 accu_g_gdy: 0.1219
+step: 6500, loss_d: 0.0544 accu_d: 0.9781
+step: 6500, loss_g: 0.2734 loss_g_ae: 0.2734 loss_g_clas: 5.5031 accu_g: 0.0891 accu_g_gdy: 0.0938
+epoch: 1, loss_d: 0.0946 accu_d: 0.9660
+epoch: 1, loss_g: 0.2773 loss_g_ae: 0.2773 loss_g_clas: 5.5683 accu_g: 0.0914 accu_g_gdy: 0.0982
+val: loss_g: 0.1352 loss_g_ae: 0.1352 loss_g_clas: 6.2464 loss_d: 0.0692 accu_d: 0.9755 accu_g: 0.0591 accu_g_gdy: 0.0601
+test: loss_g: 0.1464 loss_g_ae: 0.1464 loss_g_clas: 6.0862 loss_d: 0.0769 accu_d: 0.9724 accu_g: 0.0647 accu_g_gdy: 0.0641
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.1205 accu_d: 0.9688
+step: 1, loss_g: 0.2766 loss_g_ae: 0.2766 loss_g_clas: 5.0923 accu_g: 0.0938 accu_g_gdy: 0.0625
+step: 500, loss_d: 0.0736 accu_d: 0.9750
+step: 500, loss_g: 0.2082 loss_g_ae: 0.2082 loss_g_clas: 6.4940 accu_g: 0.0875 accu_g_gdy: 0.0813
+step: 1000, loss_d: 0.0470 accu_d: 0.9844
+step: 1000, loss_g: 0.2269 loss_g_ae: 0.2269 loss_g_clas: 6.2576 accu_g: 0.1156 accu_g_gdy: 0.1094
+step: 1500, loss_d: 0.0637 accu_d: 0.9734
+step: 1500, loss_g: 0.1788 loss_g_ae: 0.1788 loss_g_clas: 6.8226 accu_g: 0.0719 accu_g_gdy: 0.0672
+step: 2000, loss_d: 0.0468 accu_d: 0.9812
+step: 2000, loss_g: 0.1904 loss_g_ae: 0.1904 loss_g_clas: 6.5827 accu_g: 0.0781 accu_g_gdy: 0.0688
+step: 2500, loss_d: 0.0594 accu_d: 0.9766
+step: 2500, loss_g: 0.1628 loss_g_ae: 0.1628 loss_g_clas: 6.7213 accu_g: 0.0875 accu_g_gdy: 0.0750
+step: 3000, loss_d: 0.0836 accu_d: 0.9750
+step: 3000, loss_g: 0.1746 loss_g_ae: 0.1746 loss_g_clas: 6.8919 accu_g: 0.0797 accu_g_gdy: 0.0734
+step: 3500, loss_d: 0.0785 accu_d: 0.9703
+step: 3500, loss_g: 0.1436 loss_g_ae: 0.1436 loss_g_clas: 6.6874 accu_g: 0.0766 accu_g_gdy: 0.0766
+step: 4000, loss_d: 0.0693 accu_d: 0.9750
+step: 4000, loss_g: 0.1455 loss_g_ae: 0.1455 loss_g_clas: 6.9065 accu_g: 0.0734 accu_g_gdy: 0.0844
+step: 4500, loss_d: 0.0492 accu_d: 0.9859
+step: 4500, loss_g: 0.1161 loss_g_ae: 0.1161 loss_g_clas: 6.8706 accu_g: 0.0641 accu_g_gdy: 0.0750
+step: 5000, loss_d: 0.0531 accu_d: 0.9828
+step: 5000, loss_g: 0.1480 loss_g_ae: 0.1480 loss_g_clas: 7.0109 accu_g: 0.0578 accu_g_gdy: 0.0391
+step: 5500, loss_d: 0.0589 accu_d: 0.9766
+step: 5500, loss_g: 0.1040 loss_g_ae: 0.1040 loss_g_clas: 7.1243 accu_g: 0.0813 accu_g_gdy: 0.0734
+step: 6000, loss_d: 0.0773 accu_d: 0.9703
+step: 6000, loss_g: 0.1128 loss_g_ae: 0.1128 loss_g_clas: 7.0975 accu_g: 0.0563 accu_g_gdy: 0.0469
+step: 6500, loss_d: 0.0551 accu_d: 0.9781
+step: 6500, loss_g: 0.1070 loss_g_ae: 0.1070 loss_g_clas: 7.0956 accu_g: 0.0469 accu_g_gdy: 0.0391
+epoch: 2, loss_d: 0.0633 accu_d: 0.9812
+epoch: 2, loss_g: 0.1055 loss_g_ae: 0.1055 loss_g_clas: 7.4320 accu_g: 0.0568 accu_g_gdy: 0.0646
+val: loss_g: 0.0465 loss_g_ae: 0.0465 loss_g_clas: 7.7728 loss_d: 0.0625 accu_d: 0.9783 accu_g: 0.0331 accu_g_gdy: 0.0336
+test: loss_g: 0.0528 loss_g_ae: 0.0528 loss_g_clas: 7.6169 loss_d: 0.0679 accu_d: 0.9763 accu_g: 0.0363 accu_g_gdy: 0.0372
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0181 accu_d: 1.0000
+step: 1, loss_g: 0.0739 loss_g_ae: 0.0739 loss_g_clas: 7.0278 accu_g: 0.0469 accu_g_gdy: 0.0312
+step: 500, loss_d: 0.0569 accu_d: 0.9812
+step: 500, loss_g: 0.1042 loss_g_ae: 0.1042 loss_g_clas: 7.4496 accu_g: 0.0641 accu_g_gdy: 0.0625
+step: 1000, loss_d: 0.0531 accu_d: 0.9812
+step: 1000, loss_g: 0.1079 loss_g_ae: 0.1079 loss_g_clas: 8.3342 accu_g: 0.0453 accu_g_gdy: 0.0531
+step: 1500, loss_d: 0.0581 accu_d: 0.9828
+step: 1500, loss_g: 0.0883 loss_g_ae: 0.0883 loss_g_clas: 8.1054 accu_g: 0.0500 accu_g_gdy: 0.0500
+step: 2000, loss_d: 0.0451 accu_d: 0.9828
+step: 2000, loss_g: 0.0847 loss_g_ae: 0.0847 loss_g_clas: 7.8077 accu_g: 0.0609 accu_g_gdy: 0.0563
+step: 2500, loss_d: 0.0334 accu_d: 0.9906
+step: 2500, loss_g: 0.0893 loss_g_ae: 0.0893 loss_g_clas: 7.9948 accu_g: 0.0437 accu_g_gdy: 0.0563
+step: 3000, loss_d: 0.0334 accu_d: 0.9875
+step: 3000, loss_g: 0.0784 loss_g_ae: 0.0784 loss_g_clas: 7.4375 accu_g: 0.0578 accu_g_gdy: 0.0422
+step: 3500, loss_d: 0.0517 accu_d: 0.9859
+step: 3500, loss_g: 0.0818 loss_g_ae: 0.0818 loss_g_clas: 7.8321 accu_g: 0.0516 accu_g_gdy: 0.0469
+step: 4000, loss_d: 0.0294 accu_d: 0.9906
+step: 4000, loss_g: 0.0934 loss_g_ae: 0.0934 loss_g_clas: 8.3750 accu_g: 0.0422 accu_g_gdy: 0.0516
+step: 4500, loss_d: 0.0319 accu_d: 0.9859
+step: 4500, loss_g: 0.0662 loss_g_ae: 0.0662 loss_g_clas: 7.9095 accu_g: 0.0453 accu_g_gdy: 0.0359
+step: 5000, loss_d: 0.0577 accu_d: 0.9891
+step: 5000, loss_g: 0.0909 loss_g_ae: 0.0909 loss_g_clas: 8.5263 accu_g: 0.0484 accu_g_gdy: 0.0625
+step: 5500, loss_d: 0.0359 accu_d: 0.9891
+step: 5500, loss_g: 0.0681 loss_g_ae: 0.0681 loss_g_clas: 8.1318 accu_g: 0.0422 accu_g_gdy: 0.0484
+step: 6000, loss_d: 0.0452 accu_d: 0.9828
+step: 6000, loss_g: 0.0811 loss_g_ae: 0.0811 loss_g_clas: 8.2507 accu_g: 0.0453 accu_g_gdy: 0.0531
+step: 6500, loss_d: 0.0422 accu_d: 0.9891
+step: 6500, loss_g: 0.0604 loss_g_ae: 0.0604 loss_g_clas: 8.1354 accu_g: 0.0266 accu_g_gdy: 0.0187
+epoch: 3, loss_d: 0.0489 accu_d: 0.9875
+epoch: 3, loss_g: 0.0690 loss_g_ae: 0.0690 loss_g_clas: 8.1476 accu_g: 0.0605 accu_g_gdy: 0.0594
+val: loss_g: 0.0220 loss_g_ae: 0.0220 loss_g_clas: 8.6056 loss_d: 0.0628 accu_d: 0.9790 accu_g: 0.0284 accu_g_gdy: 0.0295
+test: loss_g: 0.0252 loss_g_ae: 0.0252 loss_g_clas: 8.4256 loss_d: 0.0684 accu_d: 0.9768 accu_g: 0.0317 accu_g_gdy: 0.0329
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0441 accu_d: 0.9844
+step: 1, loss_g: 0.0475 loss_g_ae: 0.0475 loss_g_clas: 8.2916 accu_g: 0.0781 accu_g_gdy: 0.0625
+step: 500, loss_d: 0.0580 accu_d: 0.9812
+step: 500, loss_g: 0.0482 loss_g_ae: 0.0482 loss_g_clas: 8.8175 accu_g: 0.0359 accu_g_gdy: 0.0359
+step: 1000, loss_d: 0.0409 accu_d: 0.9875
+step: 1000, loss_g: 0.0579 loss_g_ae: 0.0579 loss_g_clas: 8.7306 accu_g: 0.0469 accu_g_gdy: 0.0516
+step: 1500, loss_d: 0.0687 accu_d: 0.9797
+step: 1500, loss_g: 0.0603 loss_g_ae: 0.0603 loss_g_clas: 8.8487 accu_g: 0.0328 accu_g_gdy: 0.0422
+step: 2000, loss_d: 0.0396 accu_d: 0.9844
+step: 2000, loss_g: 0.0688 loss_g_ae: 0.0688 loss_g_clas: 8.8691 accu_g: 0.0234 accu_g_gdy: 0.0344
+step: 2500, loss_d: 0.0392 accu_d: 0.9844
+step: 2500, loss_g: 0.0548 loss_g_ae: 0.0548 loss_g_clas: 9.0702 accu_g: 0.0406 accu_g_gdy: 0.0359
+step: 3000, loss_d: 0.0341 accu_d: 0.9938
+step: 3000, loss_g: 0.0549 loss_g_ae: 0.0549 loss_g_clas: 9.1543 accu_g: 0.0406 accu_g_gdy: 0.0328
+step: 3500, loss_d: 0.0385 accu_d: 0.9844
+step: 3500, loss_g: 0.0650 loss_g_ae: 0.0650 loss_g_clas: 8.8968 accu_g: 0.0328 accu_g_gdy: 0.0531
+step: 4000, loss_d: 0.0403 accu_d: 0.9859
+step: 4000, loss_g: 0.0640 loss_g_ae: 0.0640 loss_g_clas: 9.1801 accu_g: 0.0250 accu_g_gdy: 0.0359
+step: 4500, loss_d: 0.0258 accu_d: 0.9906
+step: 4500, loss_g: 0.0390 loss_g_ae: 0.0390 loss_g_clas: 9.2145 accu_g: 0.0312 accu_g_gdy: 0.0297
+step: 5000, loss_d: 0.0368 accu_d: 0.9828
+step: 5000, loss_g: 0.0464 loss_g_ae: 0.0464 loss_g_clas: 9.8220 accu_g: 0.0312 accu_g_gdy: 0.0312
+step: 5500, loss_d: 0.0409 accu_d: 0.9906
+step: 5500, loss_g: 0.0494 loss_g_ae: 0.0494 loss_g_clas: 8.9886 accu_g: 0.0328 accu_g_gdy: 0.0297
+step: 6000, loss_d: 0.0476 accu_d: 0.9875
+step: 6000, loss_g: 0.0478 loss_g_ae: 0.0478 loss_g_clas: 8.5359 accu_g: 0.0375 accu_g_gdy: 0.0406
+step: 6500, loss_d: 0.0560 accu_d: 0.9844
+step: 6500, loss_g: 0.0403 loss_g_ae: 0.0403 loss_g_clas: 9.1153 accu_g: 0.0219 accu_g_gdy: 0.0266
+epoch: 4, loss_d: 0.0700 accu_d: 0.9760
+epoch: 4, loss_g: 0.0364 loss_g_ae: 0.0364 loss_g_clas: 8.8994 accu_g: 0.0271 accu_g_gdy: 0.0334
+val: loss_g: 0.0107 loss_g_ae: 0.0107 loss_g_clas: 9.2379 loss_d: 0.0655 accu_d: 0.9788 accu_g: 0.0243 accu_g_gdy: 0.0247
+test: loss_g: 0.0133 loss_g_ae: 0.0133 loss_g_clas: 9.0703 loss_d: 0.0697 accu_d: 0.9768 accu_g: 0.0265 accu_g_gdy: 0.0271
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.1510 accu_d: 0.9688
+step: 1, loss_g: 0.0652 loss_g_ae: 0.0652 loss_g_clas: 8.7945 accu_g: 0.0469 accu_g_gdy: 0.0625
+step: 500, loss_d: 0.0203 accu_d: 0.9906
+step: 500, loss_g: 0.0301 loss_g_ae: 0.0301 loss_g_clas: 9.5865 accu_g: 0.0266 accu_g_gdy: 0.0297
+step: 1000, loss_d: 0.0357 accu_d: 0.9875
+step: 1000, loss_g: 0.0442 loss_g_ae: 0.0442 loss_g_clas: 9.5461 accu_g: 0.0281 accu_g_gdy: 0.0219
+step: 1500, loss_d: 0.0243 accu_d: 0.9891
+step: 1500, loss_g: 0.0374 loss_g_ae: 0.0374 loss_g_clas: 9.5514 accu_g: 0.0250 accu_g_gdy: 0.0281
+step: 2000, loss_d: 0.0184 accu_d: 0.9953
+step: 2000, loss_g: 0.0401 loss_g_ae: 0.0401 loss_g_clas: 10.1944 accu_g: 0.0250 accu_g_gdy: 0.0344
+step: 2500, loss_d: 0.0384 accu_d: 0.9875
+step: 2500, loss_g: 0.0361 loss_g_ae: 0.0361 loss_g_clas: 9.7791 accu_g: 0.0437 accu_g_gdy: 0.0406
+step: 3000, loss_d: 0.0211 accu_d: 0.9922
+step: 3000, loss_g: 0.0371 loss_g_ae: 0.0371 loss_g_clas: 9.9017 accu_g: 0.0297 accu_g_gdy: 0.0297
+step: 3500, loss_d: 0.0353 accu_d: 0.9859
+step: 3500, loss_g: 0.0322 loss_g_ae: 0.0322 loss_g_clas: 10.0816 accu_g: 0.0312 accu_g_gdy: 0.0281
+step: 4000, loss_d: 0.0376 accu_d: 0.9828
+step: 4000, loss_g: 0.0263 loss_g_ae: 0.0263 loss_g_clas: 9.9410 accu_g: 0.0312 accu_g_gdy: 0.0266
+step: 4500, loss_d: 0.0552 accu_d: 0.9906
+step: 4500, loss_g: 0.0406 loss_g_ae: 0.0406 loss_g_clas: 9.8177 accu_g: 0.0250 accu_g_gdy: 0.0312
+step: 5000, loss_d: 0.0371 accu_d: 0.9875
+step: 5000, loss_g: 0.0409 loss_g_ae: 0.0409 loss_g_clas: 10.0835 accu_g: 0.0266 accu_g_gdy: 0.0172
+step: 5500, loss_d: 0.0296 accu_d: 0.9891
+step: 5500, loss_g: 0.0351 loss_g_ae: 0.0351 loss_g_clas: 10.4059 accu_g: 0.0250 accu_g_gdy: 0.0172
+step: 6000, loss_d: 0.0271 accu_d: 0.9891
+step: 6000, loss_g: 0.0312 loss_g_ae: 0.0312 loss_g_clas: 9.3983 accu_g: 0.0219 accu_g_gdy: 0.0281
+step: 6500, loss_d: 0.0420 accu_d: 0.9875
+step: 6500, loss_g: 0.0235 loss_g_ae: 0.0235 loss_g_clas: 10.5042 accu_g: 0.0203 accu_g_gdy: 0.0203
+epoch: 5, loss_d: 0.0325 accu_d: 0.9875
+epoch: 5, loss_g: 0.0338 loss_g_ae: 0.0338 loss_g_clas: 9.6595 accu_g: 0.0266 accu_g_gdy: 0.0203
+val: loss_g: 0.0054 loss_g_ae: 0.0054 loss_g_clas: 10.3844 loss_d: 0.0720 accu_d: 0.9774 accu_g: 0.0248 accu_g_gdy: 0.0249
+test: loss_g: 0.0072 loss_g_ae: 0.0072 loss_g_clas: 10.1899 loss_d: 0.0757 accu_d: 0.9758 accu_g: 0.0264 accu_g_gdy: 0.0266
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0233 accu_d: 0.9844
+step: 1, loss_g: 0.0282 loss_g_ae: 0.0282 loss_g_clas: 10.8332 accu_g: 0.0156 accu_g_gdy: 0.0156
+step: 500, loss_d: 0.0122 accu_d: 0.9984
+step: 500, loss_g: 0.0283 loss_g_ae: 0.0283 loss_g_clas: 10.0975 accu_g: 0.0250 accu_g_gdy: 0.0344
+step: 1000, loss_d: 0.0244 accu_d: 0.9906
+step: 1000, loss_g: 0.0317 loss_g_ae: 0.0317 loss_g_clas: 10.4865 accu_g: 0.0219 accu_g_gdy: 0.0219
+step: 1500, loss_d: 0.0210 accu_d: 0.9938
+step: 1500, loss_g: 0.0255 loss_g_ae: 0.0255 loss_g_clas: 11.1724 accu_g: 0.0203 accu_g_gdy: 0.0172
+step: 2000, loss_d: 0.0126 accu_d: 0.9984
+step: 2000, loss_g: 0.0238 loss_g_ae: 0.0238 loss_g_clas: 11.3139 accu_g: 0.0359 accu_g_gdy: 0.0328
+step: 2500, loss_d: 0.0383 accu_d: 0.9906
+step: 2500, loss_g: 0.0255 loss_g_ae: 0.0255 loss_g_clas: 11.2652 accu_g: 0.0125 accu_g_gdy: 0.0125
+step: 3000, loss_d: 0.0243 accu_d: 0.9922
+step: 3000, loss_g: 0.0274 loss_g_ae: 0.0274 loss_g_clas: 10.9103 accu_g: 0.0141 accu_g_gdy: 0.0125
+step: 3500, loss_d: 0.0322 accu_d: 0.9891
+step: 3500, loss_g: 0.0389 loss_g_ae: 0.0389 loss_g_clas: 10.6702 accu_g: 0.0266 accu_g_gdy: 0.0297
+step: 4000, loss_d: 0.0149 accu_d: 0.9953
+step: 4000, loss_g: 0.0257 loss_g_ae: 0.0257 loss_g_clas: 11.5292 accu_g: 0.0234 accu_g_gdy: 0.0234
+step: 4500, loss_d: 0.0250 accu_d: 0.9906
+step: 4500, loss_g: 0.0253 loss_g_ae: 0.0253 loss_g_clas: 11.0738 accu_g: 0.0141 accu_g_gdy: 0.0172
+step: 5000, loss_d: 0.0254 accu_d: 0.9891
+step: 5000, loss_g: 0.0256 loss_g_ae: 0.0256 loss_g_clas: 11.4565 accu_g: 0.0250 accu_g_gdy: 0.0266
+step: 5500, loss_d: 0.0436 accu_d: 0.9844
+step: 5500, loss_g: 0.0255 loss_g_ae: 0.0255 loss_g_clas: 11.0442 accu_g: 0.0250 accu_g_gdy: 0.0187
+step: 6000, loss_d: 0.0336 accu_d: 0.9844
+step: 6000, loss_g: 0.0297 loss_g_ae: 0.0297 loss_g_clas: 11.0304 accu_g: 0.0187 accu_g_gdy: 0.0187
+step: 6500, loss_d: 0.0180 accu_d: 0.9953
+step: 6500, loss_g: 0.0317 loss_g_ae: 0.0317 loss_g_clas: 10.8302 accu_g: 0.0312 accu_g_gdy: 0.0234
+epoch: 6, loss_d: 0.0322 accu_d: 0.9906
+epoch: 6, loss_g: 0.0294 loss_g_ae: 0.0294 loss_g_clas: 10.9559 accu_g: 0.0172 accu_g_gdy: 0.0156
+val: loss_g: 0.0035 loss_g_ae: 0.0035 loss_g_clas: 11.0923 loss_d: 0.0735 accu_d: 0.9774 accu_g: 0.0242 accu_g_gdy: 0.0241
+test: loss_g: 0.0044 loss_g_ae: 0.0044 loss_g_clas: 10.8891 loss_d: 0.0796 accu_d: 0.9756 accu_g: 0.0259 accu_g_gdy: 0.0259
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0024 accu_d: 1.0000
+step: 1, loss_g: 0.0335 loss_g_ae: 0.0335 loss_g_clas: 11.3253 accu_g: 0.0156 accu_g_gdy: 0.0156
+step: 500, loss_d: 0.0323 accu_d: 0.9969
+step: 500, loss_g: 0.0228 loss_g_ae: 0.0228 loss_g_clas: 12.3870 accu_g: 0.0094 accu_g_gdy: 0.0172
+step: 1000, loss_d: 0.0230 accu_d: 0.9906
+step: 1000, loss_g: 0.0212 loss_g_ae: 0.0212 loss_g_clas: 11.6665 accu_g: 0.0234 accu_g_gdy: 0.0219
+step: 1500, loss_d: 0.0360 accu_d: 0.9828
+step: 1500, loss_g: 0.0147 loss_g_ae: 0.0147 loss_g_clas: 11.6878 accu_g: 0.0141 accu_g_gdy: 0.0203
+step: 2000, loss_d: 0.0311 accu_d: 0.9906
+step: 2000, loss_g: 0.0215 loss_g_ae: 0.0215 loss_g_clas: 12.6349 accu_g: 0.0141 accu_g_gdy: 0.0141
+step: 2500, loss_d: 0.0260 accu_d: 0.9891
+step: 2500, loss_g: 0.0291 loss_g_ae: 0.0291 loss_g_clas: 11.8150 accu_g: 0.0156 accu_g_gdy: 0.0156
+step: 3000, loss_d: 0.0217 accu_d: 0.9953
+step: 3000, loss_g: 0.0158 loss_g_ae: 0.0158 loss_g_clas: 12.4484 accu_g: 0.0187 accu_g_gdy: 0.0172
+step: 3500, loss_d: 0.0249 accu_d: 0.9922
+step: 3500, loss_g: 0.0223 loss_g_ae: 0.0223 loss_g_clas: 12.9476 accu_g: 0.0141 accu_g_gdy: 0.0125
+step: 4000, loss_d: 0.0474 accu_d: 0.9844
+step: 4000, loss_g: 0.0172 loss_g_ae: 0.0172 loss_g_clas: 12.1328 accu_g: 0.0078 accu_g_gdy: 0.0125
+step: 4500, loss_d: 0.0249 accu_d: 0.9922
+step: 4500, loss_g: 0.0160 loss_g_ae: 0.0160 loss_g_clas: 12.1719 accu_g: 0.0281 accu_g_gdy: 0.0281
+step: 5000, loss_d: 0.0229 accu_d: 0.9906
+step: 5000, loss_g: 0.0189 loss_g_ae: 0.0189 loss_g_clas: 13.1022 accu_g: 0.0203 accu_g_gdy: 0.0203
+step: 5500, loss_d: 0.0176 accu_d: 0.9922
+step: 5500, loss_g: 0.0201 loss_g_ae: 0.0201 loss_g_clas: 11.8763 accu_g: 0.0109 accu_g_gdy: 0.0125
+step: 6000, loss_d: 0.0451 accu_d: 0.9859
+step: 6000, loss_g: 0.0225 loss_g_ae: 0.0225 loss_g_clas: 11.9142 accu_g: 0.0172 accu_g_gdy: 0.0172
+step: 6500, loss_d: 0.0228 accu_d: 0.9891
+step: 6500, loss_g: 0.0310 loss_g_ae: 0.0310 loss_g_clas: 12.2103 accu_g: 0.0156 accu_g_gdy: 0.0234
+epoch: 7, loss_d: 0.0289 accu_d: 0.9875
+epoch: 7, loss_g: 0.0229 loss_g_ae: 0.0229 loss_g_clas: 11.6504 accu_g: 0.0109 accu_g_gdy: 0.0146
+val: loss_g: 0.0022 loss_g_ae: 0.0022 loss_g_clas: 11.9192 loss_d: 0.0795 accu_d: 0.9771 accu_g: 0.0239 accu_g_gdy: 0.0240
+test: loss_g: 0.0031 loss_g_ae: 0.0031 loss_g_clas: 11.7026 loss_d: 0.0846 accu_d: 0.9751 accu_g: 0.0258 accu_g_gdy: 0.0262
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0013 accu_d: 1.0000
+step: 1, loss_g: 0.0117 loss_g_ae: 0.0117 loss_g_clas: 10.8490 accu_g: 0.0000 accu_g_gdy: 0.0000
+step: 500, loss_d: 0.0127 accu_d: 0.9969
+step: 500, loss_g: 0.0201 loss_g_ae: 0.0201 loss_g_clas: 12.2808 accu_g: 0.0109 accu_g_gdy: 0.0047
+step: 1000, loss_d: 0.0115 accu_d: 0.9984
+step: 1000, loss_g: 0.0079 loss_g_ae: 0.0079 loss_g_clas: 12.5659 accu_g: 0.0109 accu_g_gdy: 0.0187
+step: 1500, loss_d: 0.0155 accu_d: 0.9953
+step: 1500, loss_g: 0.0143 loss_g_ae: 0.0143 loss_g_clas: 13.3752 accu_g: 0.0094 accu_g_gdy: 0.0109
+step: 2000, loss_d: 0.0127 accu_d: 0.9953
+step: 2000, loss_g: 0.0216 loss_g_ae: 0.0216 loss_g_clas: 12.8620 accu_g: 0.0156 accu_g_gdy: 0.0141
+step: 2500, loss_d: 0.0190 accu_d: 0.9938
+step: 2500, loss_g: 0.0149 loss_g_ae: 0.0149 loss_g_clas: 12.9735 accu_g: 0.0063 accu_g_gdy: 0.0109
+step: 3000, loss_d: 0.0186 accu_d: 0.9922
+step: 3000, loss_g: 0.0202 loss_g_ae: 0.0202 loss_g_clas: 12.5360 accu_g: 0.0187 accu_g_gdy: 0.0172
+step: 3500, loss_d: 0.0058 accu_d: 1.0000
+step: 3500, loss_g: 0.0156 loss_g_ae: 0.0156 loss_g_clas: 12.3454 accu_g: 0.0187 accu_g_gdy: 0.0172
+step: 4000, loss_d: 0.0252 accu_d: 0.9906
+step: 4000, loss_g: 0.0179 loss_g_ae: 0.0179 loss_g_clas: 13.6270 accu_g: 0.0125 accu_g_gdy: 0.0141
+step: 4500, loss_d: 0.0256 accu_d: 0.9891
+step: 4500, loss_g: 0.0157 loss_g_ae: 0.0157 loss_g_clas: 13.2743 accu_g: 0.0187 accu_g_gdy: 0.0219
+step: 5000, loss_d: 0.0147 accu_d: 0.9969
+step: 5000, loss_g: 0.0195 loss_g_ae: 0.0195 loss_g_clas: 13.4882 accu_g: 0.0109 accu_g_gdy: 0.0078
+step: 5500, loss_d: 0.0290 accu_d: 0.9875
+step: 5500, loss_g: 0.0083 loss_g_ae: 0.0083 loss_g_clas: 12.9476 accu_g: 0.0141 accu_g_gdy: 0.0141
+step: 6000, loss_d: 0.0130 accu_d: 0.9938
+step: 6000, loss_g: 0.0214 loss_g_ae: 0.0214 loss_g_clas: 14.0615 accu_g: 0.0094 accu_g_gdy: 0.0109
+step: 6500, loss_d: 0.0226 accu_d: 0.9906
+step: 6500, loss_g: 0.0147 loss_g_ae: 0.0147 loss_g_clas: 13.2863 accu_g: 0.0063 accu_g_gdy: 0.0094
+epoch: 8, loss_d: 0.0238 accu_d: 0.9891
+epoch: 8, loss_g: 0.0121 loss_g_ae: 0.0121 loss_g_clas: 13.1464 accu_g: 0.0078 accu_g_gdy: 0.0109
+val: loss_g: 0.0017 loss_g_ae: 0.0017 loss_g_clas: 12.7203 loss_d: 0.0869 accu_d: 0.9763 accu_g: 0.0243 accu_g_gdy: 0.0246
+test: loss_g: 0.0019 loss_g_ae: 0.0019 loss_g_clas: 12.4763 loss_d: 0.0941 accu_d: 0.9733 accu_g: 0.0273 accu_g_gdy: 0.0274
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0098 accu_d: 1.0000
+step: 1, loss_g: 0.0096 loss_g_ae: 0.0096 loss_g_clas: 13.0891 accu_g: 0.0000 accu_g_gdy: 0.0000
+step: 500, loss_d: 0.0173 accu_d: 0.9922
+step: 500, loss_g: 0.0120 loss_g_ae: 0.0120 loss_g_clas: 13.6499 accu_g: 0.0078 accu_g_gdy: 0.0078
+step: 1000, loss_d: 0.0092 accu_d: 0.9984
+step: 1000, loss_g: 0.0127 loss_g_ae: 0.0127 loss_g_clas: 13.6869 accu_g: 0.0172 accu_g_gdy: 0.0109
+step: 1500, loss_d: 0.0108 accu_d: 0.9969
+step: 1500, loss_g: 0.0148 loss_g_ae: 0.0148 loss_g_clas: 13.5060 accu_g: 0.0172 accu_g_gdy: 0.0203
+step: 2000, loss_d: 0.0081 accu_d: 0.9984
+step: 2000, loss_g: 0.0131 loss_g_ae: 0.0131 loss_g_clas: 13.7484 accu_g: 0.0219 accu_g_gdy: 0.0156
+step: 2500, loss_d: 0.0404 accu_d: 0.9938
+step: 2500, loss_g: 0.0109 loss_g_ae: 0.0109 loss_g_clas: 13.7070 accu_g: 0.0094 accu_g_gdy: 0.0141
+step: 3000, loss_d: 0.0234 accu_d: 0.9938
+step: 3000, loss_g: 0.0068 loss_g_ae: 0.0068 loss_g_clas: 13.5699 accu_g: 0.0156 accu_g_gdy: 0.0109
+step: 3500, loss_d: 0.0373 accu_d: 0.9859
+step: 3500, loss_g: 0.0133 loss_g_ae: 0.0133 loss_g_clas: 14.5314 accu_g: 0.0109 accu_g_gdy: 0.0156
+step: 4000, loss_d: 0.0236 accu_d: 0.9969
+step: 4000, loss_g: 0.0205 loss_g_ae: 0.0205 loss_g_clas: 14.3531 accu_g: 0.0187 accu_g_gdy: 0.0156
+step: 4500, loss_d: 0.0163 accu_d: 0.9953
+step: 4500, loss_g: 0.0115 loss_g_ae: 0.0115 loss_g_clas: 14.1058 accu_g: 0.0109 accu_g_gdy: 0.0094
+step: 5000, loss_d: 0.0208 accu_d: 0.9922
+step: 5000, loss_g: 0.0103 loss_g_ae: 0.0103 loss_g_clas: 14.1231 accu_g: 0.0125 accu_g_gdy: 0.0109
+step: 5500, loss_d: 0.0325 accu_d: 0.9891
+step: 5500, loss_g: 0.0113 loss_g_ae: 0.0113 loss_g_clas: 14.3413 accu_g: 0.0172 accu_g_gdy: 0.0125
+step: 6000, loss_d: 0.0277 accu_d: 0.9891
+step: 6000, loss_g: 0.0225 loss_g_ae: 0.0225 loss_g_clas: 12.9930 accu_g: 0.0047 accu_g_gdy: 0.0109
+step: 6500, loss_d: 0.0304 accu_d: 0.9844
+step: 6500, loss_g: 0.0125 loss_g_ae: 0.0125 loss_g_clas: 13.6756 accu_g: 0.0172 accu_g_gdy: 0.0125
+epoch: 9, loss_d: 0.0280 accu_d: 0.9906
+epoch: 9, loss_g: 0.0092 loss_g_ae: 0.0092 loss_g_clas: 14.0022 accu_g: 0.0125 accu_g_gdy: 0.0172
+val: loss_g: 0.0015 loss_g_ae: 0.0015 loss_g_clas: 13.6857 loss_d: 0.0926 accu_d: 0.9756 accu_g: 0.0249 accu_g_gdy: 0.0248
+test: loss_g: 0.0016 loss_g_ae: 0.0016 loss_g_clas: 13.4250 loss_d: 0.0999 accu_d: 0.9737 accu_g: 0.0266 accu_g_gdy: 0.0267
+gamma: 1.0, lambda_g: 0.0
+step: 1, loss_d: 0.0054 accu_d: 1.0000
+step: 1, loss_g: 0.0010 loss_g_ae: 0.0010 loss_g_clas: 14.9831 accu_g: 0.0000 accu_g_gdy: 0.0000
+step: 500, loss_d: 0.0112 accu_d: 0.9969
+step: 500, loss_g: 0.0142 loss_g_ae: 0.0142 loss_g_clas: 14.1004 accu_g: 0.0094 accu_g_gdy: 0.0156
+step: 1000, loss_d: 0.0079 accu_d: 0.9969
+step: 1000, loss_g: 0.0139 loss_g_ae: 0.0139 loss_g_clas: 13.6666 accu_g: 0.0141 accu_g_gdy: 0.0172
+step: 1500, loss_d: 0.0124 accu_d: 0.9953
+step: 1500, loss_g: 0.0122 loss_g_ae: 0.0122 loss_g_clas: 14.3717 accu_g: 0.0125 accu_g_gdy: 0.0109
+step: 2000, loss_d: 0.0120 accu_d: 0.9953
+step: 2000, loss_g: 0.0096 loss_g_ae: 0.0096 loss_g_clas: 14.9547 accu_g: 0.0063 accu_g_gdy: 0.0047
+step: 2500, loss_d: 0.0248 accu_d: 0.9891
+step: 2500, loss_g: 0.0157 loss_g_ae: 0.0157 loss_g_clas: 14.6828 accu_g: 0.0063 accu_g_gdy: 0.0031
+step: 3000, loss_d: 0.0163 accu_d: 0.9922
+step: 3000, loss_g: 0.0108 loss_g_ae: 0.0108 loss_g_clas: 14.7870 accu_g: 0.0063 accu_g_gdy: 0.0172
+step: 3500, loss_d: 0.0221 accu_d: 0.9906
+step: 3500, loss_g: 0.0153 loss_g_ae: 0.0153 loss_g_clas: 14.8264 accu_g: 0.0219 accu_g_gdy: 0.0219
+step: 4000, loss_d: 0.0377 accu_d: 0.9875
+step: 4000, loss_g: 0.0131 loss_g_ae: 0.0131 loss_g_clas: 15.0076 accu_g: 0.0141 accu_g_gdy: 0.0078
+step: 4500, loss_d: 0.0120 accu_d: 0.9922
+step: 4500, loss_g: 0.0108 loss_g_ae: 0.0108 loss_g_clas: 14.7287 accu_g: 0.0047 accu_g_gdy: 0.0094
+step: 5000, loss_d: 0.0447 accu_d: 0.9906
+step: 5000, loss_g: 0.0079 loss_g_ae: 0.0079 loss_g_clas: 14.5227 accu_g: 0.0094 accu_g_gdy: 0.0094
+step: 5500, loss_d: 0.0143 accu_d: 0.9953
+step: 5500, loss_g: 0.0131 loss_g_ae: 0.0131 loss_g_clas: 14.4816 accu_g: 0.0187 accu_g_gdy: 0.0172
+step: 6000, loss_d: 0.0131 accu_d: 0.9938
+step: 6000, loss_g: 0.0128 loss_g_ae: 0.0128 loss_g_clas: 14.4435 accu_g: 0.0125 accu_g_gdy: 0.0187
+step: 6500, loss_d: 0.0132 accu_d: 0.9953
+step: 6500, loss_g: 0.0362 loss_g_ae: 0.0362 loss_g_clas: 14.9881 accu_g: 0.0125 accu_g_gdy: 0.0063
+epoch: 10, loss_d: 0.0179 accu_d: 0.9916
+epoch: 10, loss_g: 0.0090 loss_g_ae: 0.0090 loss_g_clas: 13.5774 accu_g: 0.0203 accu_g_gdy: 0.0219
+val: loss_g: 0.0010 loss_g_ae: 0.0010 loss_g_clas: 13.8621 loss_d: 0.0985 accu_d: 0.9751 accu_g: 0.0252 accu_g_gdy: 0.0253
+test: loss_g: 0.0010 loss_g_ae: 0.0010 loss_g_clas: 13.6072 loss_d: 0.1095 accu_d: 0.9718 accu_g: 0.0284 accu_g_gdy: 0.0286
+gamma: 0.5, lambda_g: 0.1
+step: 1, loss_d: 0.0292 accu_d: 0.9844
+step: 1, loss_g: 1.5245 loss_g_ae: 0.0055 loss_g_clas: 15.1899 accu_g: 0.0156 accu_g_gdy: 0.0156
+step: 500, loss_d: 0.0082 accu_d: 0.9984
+step: 500, loss_g: 0.2994 loss_g_ae: 0.1868 loss_g_clas: 1.1266 accu_g: 0.8047 accu_g_gdy: 0.8141
+step: 1000, loss_d: 0.0174 accu_d: 0.9922
+step: 1000, loss_g: 0.2515 loss_g_ae: 0.1543 loss_g_clas: 0.9720 accu_g: 0.8438 accu_g_gdy: 0.8375
+step: 1500, loss_d: 0.0413 accu_d: 0.9922
+step: 1500, loss_g: 0.1970 loss_g_ae: 0.0993 loss_g_clas: 0.9771 accu_g: 0.8359 accu_g_gdy: 0.8359
+step: 2000, loss_d: 0.0133 accu_d: 0.9969
+step: 2000, loss_g: 0.1838 loss_g_ae: 0.1142 loss_g_clas: 0.6964 accu_g: 0.8969 accu_g_gdy: 0.8953
+step: 2500, loss_d: 0.0178 accu_d: 0.9922
+step: 2500, loss_g: 0.1351 loss_g_ae: 0.0883 loss_g_clas: 0.4675 accu_g: 0.9062 accu_g_gdy: 0.8906
+step: 3000, loss_d: 0.0121 accu_d: 0.9922
+step: 3000, loss_g: 0.1696 loss_g_ae: 0.0703 loss_g_clas: 0.9928 accu_g: 0.8734 accu_g_gdy: 0.8641
+step: 3500, loss_d: 0.0212 accu_d: 0.9922
+step: 3500, loss_g: 0.1587 loss_g_ae: 0.0939 loss_g_clas: 0.6483 accu_g: 0.8922 accu_g_gdy: 0.9000
+step: 4000, loss_d: 0.0157 accu_d: 0.9922
+step: 4000, loss_g: 0.1538 loss_g_ae: 0.0969 loss_g_clas: 0.5692 accu_g: 0.9078 accu_g_gdy: 0.8984
+step: 4500, loss_d: 0.0163 accu_d: 0.9922
+step: 4500, loss_g: 0.1414 loss_g_ae: 0.0858 loss_g_clas: 0.5564 accu_g: 0.9016 accu_g_gdy: 0.9156
+step: 5000, loss_d: 0.0102 accu_d: 0.9922
+step: 5000, loss_g: 0.1356 loss_g_ae: 0.0842 loss_g_clas: 0.5142 accu_g: 0.9234 accu_g_gdy: 0.9219
+step: 5500, loss_d: 0.0171 accu_d: 0.9938
+step: 5500, loss_g: 0.1888 loss_g_ae: 0.1072 loss_g_clas: 0.8155 accu_g: 0.8719 accu_g_gdy: 0.8594
+step: 6000, loss_d: 0.0108 accu_d: 0.9984
+step: 6000, loss_g: 0.1351 loss_g_ae: 0.0950 loss_g_clas: 0.4010 accu_g: 0.9281 accu_g_gdy: 0.9062
+step: 6500, loss_d: 0.0123 accu_d: 0.9969
+step: 6500, loss_g: 0.1283 loss_g_ae: 0.0800 loss_g_clas: 0.4833 accu_g: 0.9234 accu_g_gdy: 0.9187
+epoch: 11, loss_d: 0.0428 accu_d: 0.9906
+epoch: 11, loss_g: 0.1110 loss_g_ae: 0.0596 loss_g_clas: 0.5142 accu_g: 0.9113 accu_g_gdy: 0.9098
+val: loss_g: 0.0698 loss_g_ae: 0.0254 loss_g_clas: 0.4437 loss_d: 0.1048 accu_d: 0.9751 accu_g: 0.9228 accu_g_gdy: 0.9206
+test: loss_g: 0.0718 loss_g_ae: 0.0253 loss_g_clas: 0.4655 loss_d: 0.1170 accu_d: 0.9723 accu_g: 0.9188 accu_g_gdy: 0.9160
+gamma: 0.25, lambda_g: 0.1
+step: 1, loss_d: 0.0002 accu_d: 1.0000
+step: 1, loss_g: 0.1156 loss_g_ae: 0.0967 loss_g_clas: 0.1894 accu_g: 0.9844 accu_g_gdy: 0.9531
+step: 500, loss_d: 0.0184 accu_d: 0.9891
+step: 500, loss_g: 0.1020 loss_g_ae: 0.0601 loss_g_clas: 0.4193 accu_g: 0.9266 accu_g_gdy: 0.9281
+step: 1000, loss_d: 0.0051 accu_d: 0.9984
+step: 1000, loss_g: 0.1009 loss_g_ae: 0.0585 loss_g_clas: 0.4234 accu_g: 0.9469 accu_g_gdy: 0.9469
+step: 1500, loss_d: 0.0071 accu_d: 0.9984
+step: 1500, loss_g: 0.1283 loss_g_ae: 0.0826 loss_g_clas: 0.4575 accu_g: 0.9234 accu_g_gdy: 0.9187
+step: 2000, loss_d: 0.0042 accu_d: 1.0000
+step: 2000, loss_g: 0.1293 loss_g_ae: 0.0976 loss_g_clas: 0.3170 accu_g: 0.9469 accu_g_gdy: 0.9453
+step: 2500, loss_d: 0.0348 accu_d: 0.9891
+step: 2500, loss_g: 0.1262 loss_g_ae: 0.0931 loss_g_clas: 0.3308 accu_g: 0.9500 accu_g_gdy: 0.9500
+step: 3000, loss_d: 0.0208 accu_d: 0.9922
+step: 3000, loss_g: 0.1115 loss_g_ae: 0.0739 loss_g_clas: 0.3765 accu_g: 0.9375 accu_g_gdy: 0.9391
+step: 3500, loss_d: 0.0209 accu_d: 0.9922
+step: 3500, loss_g: 0.0737 loss_g_ae: 0.0410 loss_g_clas: 0.3266 accu_g: 0.9484 accu_g_gdy: 0.9281
+step: 4000, loss_d: 0.0211 accu_d: 0.9953
+step: 4000, loss_g: 0.1216 loss_g_ae: 0.0508 loss_g_clas: 0.7075 accu_g: 0.8984 accu_g_gdy: 0.8938
+step: 4500, loss_d: 0.0185 accu_d: 0.9922
+step: 4500, loss_g: 0.1039 loss_g_ae: 0.0647 loss_g_clas: 0.3918 accu_g: 0.9344 accu_g_gdy: 0.9266
+step: 5000, loss_d: 0.0166 accu_d: 0.9953
+step: 5000, loss_g: 0.0952 loss_g_ae: 0.0630 loss_g_clas: 0.3225 accu_g: 0.9484 accu_g_gdy: 0.9422
+step: 5500, loss_d: 0.0192 accu_d: 0.9891
+step: 5500, loss_g: 0.0776 loss_g_ae: 0.0505 loss_g_clas: 0.2712 accu_g: 0.9531 accu_g_gdy: 0.9547
+step: 6000, loss_d: 0.0154 accu_d: 0.9938
+step: 6000, loss_g: 0.0843 loss_g_ae: 0.0507 loss_g_clas: 0.3365 accu_g: 0.9375 accu_g_gdy: 0.9297
+step: 6500, loss_d: 0.0323 accu_d: 0.9891
+step: 6500, loss_g: 0.1039 loss_g_ae: 0.0546 loss_g_clas: 0.4926 accu_g: 0.9234 accu_g_gdy: 0.9156
+epoch: 12, loss_d: 0.0098 accu_d: 0.9984
+epoch: 12, loss_g: 0.1003 loss_g_ae: 0.0626 loss_g_clas: 0.3773 accu_g: 0.9406 accu_g_gdy: 0.9385
+val: loss_g: 0.0653 loss_g_ae: 0.0201 loss_g_clas: 0.4520 loss_d: 0.1081 accu_d: 0.9741 accu_g: 0.9240 accu_g_gdy: 0.9220
+test: loss_g: 0.0659 loss_g_ae: 0.0204 loss_g_clas: 0.4552 loss_d: 0.1187 accu_d: 0.9724 accu_g: 0.9217 accu_g_gdy: 0.9199
+(coe197z) PS C:\Users\Marcus\197_proj1\texar-master\texar-master\examples\text_style_transfer> eee

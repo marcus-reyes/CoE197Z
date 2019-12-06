@@ -174,16 +174,13 @@ def _main(_):
             iterator.restart_dataset(sess, ['train_g', 'train_d'])
             _train_epoch(sess, gamma_, lambda_g_, epoch)
 
-            #Remove
-            saver.save(
-                sess, os.path.join(config.checkpoint_path, 'ckpt'), epoch)
-
             # Val
             iterator.restart_dataset(sess, 'val')
             _eval_epoch(sess, gamma_, lambda_g_, epoch, 'val')
 
-            saver.save(
-                sess, os.path.join(config.checkpoint_path, 'ckpt'), epoch)
+            if (epoch % 10 == 0):
+                saver.save(
+                        sess, os.path.join(config.checkpoint_path, 'ckpt'), epoch)
 
             # Test
             iterator.restart_dataset(sess, 'test')
